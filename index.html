@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hometask3</title>
+    <title>Homes3</title>
     <script>
         function sizePic() {
-            size = document.getElementById("size").value;
-            img = document.getElementById("pic");
+            let size = document.getElementById("size").value;
+            const img = document.getElementById("pic");
             img.width = 20 + 20 * size;
         }
     </script>
@@ -64,13 +64,13 @@
             изучать теоретическую часть "Frontend разработки", так сказать протестировать себя и свои возможности в
             изучении
             этой ветки.</p>
-        <img src="images/1.png">
+        <img src="images/1.png" alt="about_frontend">
     </div>
 </section>
 
 <section class="list">
     <div class="container">
-        <h2>Нумерованный и маркерованный список</h2>
+        <h2>Нумерованный и маркированный список</h2>
         <ol>
             <li>Знакомство с Web</li>
             <ul>
@@ -185,30 +185,46 @@
                 <p><img src="images/figure.jpg" alt="Image-level_up" id="pic"></p>
 
                 <p>What does HTML stand for?</p>
-                <input type="checkbox" name="Hyperlinks"> Hyperlinks and Text Markup Language <br>
-                <input type="checkbox" name="Home"> Home Tool Markup Language <br>
-                <input type="checkbox" name="Hyper"> Hyper Text Markup Language
+                <label>
+                    <input type="checkbox" name="Hyperlinks">
+                </label> Hyperlinks and Text Markup Language <br>
+                <label>
+                    <input type="checkbox" name="Home">
+                </label> Home Tool Markup Language <br>
+                <label>
+                    <input type="checkbox" name="Hyper">
+                </label> Hyper Text Markup Language
 
 
                 <p>What does HTML stand for?</p>
-                <input type="radio" name="answer1"> Hyper Text Translate Protocol <br>
-                <input type="radio" name="answer2"> Hyper Text Transmission Protocol <br>
-                <input type="radio" name="answer3"> Hyper Text Transfer Protocol
+                <label>
+                    <input type="radio" name="answer1">
+                </label> Hyper Text Translate Protocol <br>
+                <label>
+                    <input type="radio" name="answer2">
+                </label> Hyper Text Transmission Protocol <br>
+                <label>
+                    <input type="radio" name="answer3">
+                </label> Hyper Text Transfer Protocol
 
                 <p>Comment</p>
-                <p><textarea rows="5" cols="45" maxlength="500" name="Comment"
-                             placeholder="Enter your comment..."></textarea></p>
+                <p><label>
+<textarea rows="5" cols="45" maxlength="500" name="Comment"
+          placeholder="Enter your comment..."></textarea>
+                </label></p>
 
                 <p>What does HTML stand for?</p>
-                <select>
-                    <option disabled>Your answer</option>
-                    <option>Hyperlinks and Text Markup Language</option>
-                    <option>Home Tool Markup Language</option>
-                    <option>Hyper Text Markup Language</option>
-                    <option>Hyper Text Translate Protocol</option>
-                    <option>Hyper Text Transmission Protocol</option>
-                    <option>Hyper Text Transfer Protocol</option>
-                </select>
+                <label>
+                    <select>
+                        <option disabled>Your answer</option>
+                        <option>Hyperlinks and Text Markup Language</option>
+                        <option>Home Tool Markup Language</option>
+                        <option>Hyper Text Markup Language</option>
+                        <option>Hyper Text Translate Protocol</option>
+                        <option>Hyper Text Transmission Protocol</option>
+                        <option>Hyper Text Transfer Protocol</option>
+                    </select>
+                </label>
                 <p>
                     <button type="submit">Send</button>
                 </p>
