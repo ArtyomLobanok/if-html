@@ -1,14 +1,237 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Моя первая страница</title>
+    <title>Homes3</title>
+    <script>
+        function sizePic() {
+            let size = document.getElementById("size").value;
+            const img = document.getElementById("pic");
+            img.width = 20 + 20 * size;
+        }
+    </script>
+    <style>
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        em {
+            color: red;
+        }
+
+        ul, li {
+            line-height: 1.5;
+        }
+
+        table {
+            width: 60%;
+            border: solid black 1px;
+        }
+
+        tr, th, td {
+            border: solid black 1px;
+        }
+
+        textarea {
+            width: 30%;
+            height: 150px;
+            resize: none;
+        }
+    </style>
 </head>
 <body>
-<h1>Моя первая страница</h1>
-<p><a href="about/index.html">Об авторе</a></p>
+<section class="about">
+    <div class="container">
+        <h1>About me</h1>
+        <p>Меня зовут Лобанок Артём Владиславович.</p>
+
+        <p>После окончания школы &#127970; я поступил и окончил специальность "Техническое обеспечение безопасности" в
+            "БГУИР",
+            затем
+            окончил магистратуру и защитился поработав в университете, решил перебраться ближе к дому.
+            Около дома я нашел работу &#128188; на государственном предприятии энергетики, поработав там по
+            специальности и
+            понял что
+            хорошей заработной платы по моей специальности мне не видать.
+            Хотелось бы добавить ко всему этому на такой работе идет явный застой развития, что весьма огорчает когда
+            начинаешь
+            это замечать.</p>
+        <p>Захотелось улучшить &#128077; условия своей жизни, и немного прокачать мозги. После рекомендаций ребят
+            работающих в
+            IT, я начал
+            изучать теоретическую часть "Frontend разработки", так сказать протестировать себя и свои возможности в
+            изучении
+            этой ветки.</p>
+        <img src="images/1.png" alt="about_frontend">
+    </div>
+</section>
+
+<section class="list">
+    <div class="container">
+        <h2>Нумерованный и маркированный список</h2>
+        <ol>
+            <li>Знакомство с Web</li>
+            <ul>
+                <li>Краткая история Web и что такое интернет.</li>
+                <li>Как устроен браузер и как он получает страницы по сети.</li>
+                <li>Что такое Git?</li>
+                <li>Создание первого репозитория.</li>
+                <li>О файле .gitignore.</li>
+            </ul>
+            <li>HTML-вёрстка - первые шаги</li>
+            <ul>
+                <li>Настройка рабочей среды.</li>
+                <li>Краткая история HTML.</li>
+                <li>Какие бывают теги и что такое атрибут.</li>
+                <li>Теги работы с текстом.</li>
+                <li>Создание собственной страницы.</li>
+            </ul>
+            <li>Погружаемся в HTML-разметку</li>
+            <ul>
+                <li>Мета-теги.</li>
+                <li>Мнемоники.</li>
+                <li>Тег для работы с изображениями.</li>
+                <li>Теги для работы со списками.</li>
+                <li>Теги для работы с таблицами.</li>
+                <li>Теги для работы с формами.</li>
+                <li>Div-блоки.</li>
+            </ul>
+        </ol>
+    </div>
+</section>
+
+<section class="table">
+    <div class="container">
+        <h2>Таблица</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>&lsaquo;table&rsaquo;</td>
+                <td>Defines a table</td>
+            </tr>
+            <tr>
+                <td>&lsaquo;tr&rsaquo;</td>
+                <td>Defines a row in a table</td>
+            </tr>
+            <tr>
+                <td>&lsaquo;tr&rsaquo;</td>
+                <td rowspan="2">Defines a "header cell" in a table</td>
+            </tr>
+            <tr>
+                <td>&lsaquo;td&rsaquo;</td>
+            </tr>
+            <tr>
+                <td colspan="2">Rarely used</td>
+            </tr>
+            <tr>
+                <td>&lsaquo;caption&rsaquo;</td>
+                <td>Defines a table caption</td>
+            </tr>
+            <tr>
+                <td>&lsaquo;thead&rsaquo;</td>
+                <td>Groups the header content in a table</td>
+            </tr>
+            <tr>
+                <td>&lsaquo;tbody&rsaquo;</td>
+                <td>Groups the body content in a table</td>
+            </tr>
+            <tr>
+                <td>&lsaquo;tfoot&rsaquo;</td>
+                <td>Groups the footer content in a table</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="forms">
+    <div class="container">
+        <h2>Формы</h2>
+        <form action="/" method="get">
+            <p><i>Пожалуйста, заполните форму. Обязательные поля помечены </i><em>&#x0002A;</em></p>
+            <fieldset>
+                <legend>My first form</legend>
+                <div>
+                    <label for="name">Имя<em>&#x0002A;</em></label>
+                </div>
+                <div>
+                    <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="password">Пароль<em>&#x0002A;</em></label>
+                </div>
+                <div>
+                    <input id="password" type="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div>
+                    <label for="email">Email<em>&#x0002A;</em></label>
+                </div>
+                <div>
+                    <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label for="size">Your programming level</label>
+                </div>
+                <input type="range" min="1" max="10" id="size" oninput="sizePic()" value="3">
+                <p><img src="images/figure.jpg" alt="Image-level_up" id="pic"></p>
+
+                <p>What does HTML stand for?</p>
+                <label>
+                    <input type="checkbox" name="Hyperlinks">
+                </label> Hyperlinks and Text Markup Language <br>
+                <label>
+                    <input type="checkbox" name="Home">
+                </label> Home Tool Markup Language <br>
+                <label>
+                    <input type="checkbox" name="Hyper">
+                </label> Hyper Text Markup Language
+
+
+                <p>What does HTML stand for?</p>
+                <label>
+                    <input type="radio" name="answer1">
+                </label> Hyper Text Translate Protocol <br>
+                <label>
+                    <input type="radio" name="answer2">
+                </label> Hyper Text Transmission Protocol <br>
+                <label>
+                    <input type="radio" name="answer3">
+                </label> Hyper Text Transfer Protocol
+
+                <p>Comment</p>
+                <p><label>
+<textarea rows="5" cols="45" maxlength="500" name="Comment"
+          placeholder="Enter your comment..."></textarea>
+                </label></p>
+
+                <p>What does HTML stand for?</p>
+                <label>
+                    <select>
+                        <option disabled>Your answer</option>
+                        <option>Hyperlinks and Text Markup Language</option>
+                        <option>Home Tool Markup Language</option>
+                        <option>Hyper Text Markup Language</option>
+                        <option>Hyper Text Translate Protocol</option>
+                        <option>Hyper Text Transmission Protocol</option>
+                        <option>Hyper Text Transfer Protocol</option>
+                    </select>
+                </label>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</section>
+<hr>
 </body>
 </html>
