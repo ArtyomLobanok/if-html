@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-
     font-size: 15px;
     color: #383838;
     line-height: 1.6;
@@ -33,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 .section__header {
     width: 100%;
     margin: 0 auto 80px;
-
     text-align: center;
 }
 
@@ -47,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 100px;
     height: 4px;
-
     background-color: #F5BD41;
     margin: 20px auto 0
 }
@@ -72,7 +69,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     max-width: 100%;
     height: auto;
-
     margin-bottom: 48px;
 }
 
