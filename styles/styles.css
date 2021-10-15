@@ -49,6 +49,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px auto 0
 }
 
+.section__title2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
 /*Card*/
 .card {
     display: flex;
@@ -80,3 +85,79 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     font-weight: 400;
 }
+
+/*Overviews*/
+#loves {
+    background: #EAF0F9;
+}
+
+.overviews {
+    position: relative;
+}
+
+.overviews_block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 0 -12px;
+}
+
+.overviews__item {
+    display: block;
+    flex-direction: column;
+    max-width: 25%;
+    margin-right: 16px;
+}
+
+.overviews__item:last-child {
+    margin-right: 0;
+}
+
+.overviews__photo {
+    display: block;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 24px;
+}
+
+.overviews__tittle {
+    margin-bottom: 32px;
+
+    font-size: 24px;
+    color: #3077C6;
+}
+
+.overviews__location {
+    font-size: 24px;
+    color: #BFBFBF;
+}
+
+.overviews__btn {
+    font-size: 0px;
+    color: transparent;
+
+    position: absolute;
+    top: 30%;
+
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.overviews__btn:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+}
+
+.overviews__btn--next {
+    right: 0;
+    transform: rotate(135deg);
+}
+
