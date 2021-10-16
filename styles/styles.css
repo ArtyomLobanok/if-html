@@ -115,7 +115,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .overviews__photo {
     display: block;
-
     top: 0;
     left: 0;
     right: 0;
@@ -125,7 +124,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .overviews__tittle {
     margin-bottom: 32px;
-
     font-size: 24px;
     color: #3077C6;
 }
@@ -136,28 +134,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .overviews__btn {
-    font-size: 0px;
-    color: transparent;
-
+    font-size: 30px;
     position: absolute;
-    top: 30%;
-
+    top: 24%;
     z-index: 1;
-    transform: translateY(-50%);
+    text-decoration-line: none;
 }
 
 .overviews__btn:after {
-    content: "";
     display: block;
-    width: 16px;
-    height: 16px;
-
-    border-top: 2px solid #ccc;
-    border-left: 2px solid #ccc;
 }
 
 .overviews__btn--next {
-    right: 0;
-    transform: rotate(135deg);
+    padding: 0 15px;
+    color: #383838;
+    right: -40px;
+    background: #F3F3F4;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
 }
 
