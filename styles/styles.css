@@ -353,6 +353,13 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.promotion__enter:hover {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: #3077C6;
+    transition: opacity .1s linear;
+}
+
 .promotion__close {
     position: relative;
 }
