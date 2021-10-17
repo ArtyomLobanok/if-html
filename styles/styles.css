@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 120px 0;
 }
 
+.section--promotion {
+    padding: 89px 0 0 0;
+}
+
 .section__header {
     width: 100%;
     margin: 0 auto 104px;
@@ -134,9 +138,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .overviews__btn {
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 27px;
     position: absolute;
-    top: 24%;
+    top: 29%;
     z-index: 1;
     text-decoration-line: none;
 }
@@ -231,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .destinations__btn {
-    font-size: 30px;
+    font-size: 26px;
     position: absolute;
     left: 576px;
     z-index: 1;
@@ -245,8 +251,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .destinations__btn--next {
     padding: 15px 0;
+    width: 40px;
+    height: 40px;
     color: #383838;
-    bottom: -175px;
+    bottom: -140px;
     background: #F3F3F4;
     border-radius: 50%;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
@@ -281,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px;
 }
 
-.switcher__catigory {
+.switcher__category {
     display: block;
     padding: 17px 0;
     color: #383838;
@@ -290,6 +298,65 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-.switcher__catigory:hover {
+.switcher__category:hover {
     color: #FFFFFF;
+}
+
+/*Promotion*/
+.promotion {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EAF0F9;
+}
+
+.promotion__content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.promotion__avatar {
+    margin: 61px 24px 53px;
+    width: 86px;
+    height: 86px;
+    border: 1px solid #3077C6;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.promotion__img {
+    margin: 21px 18px;
+    position: relative;
+    top: 5px;
+}
+
+.promotion__main {
+    margin: 51px 52px 0;
+}
+
+.promotion__text {
+    margin-bottom: 21px;
+}
+
+.promotion__ad {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.promotion__enter {
+    padding: 12px 32px;
+    background-color: #FFFFFF;
+    border: 1px solid #3077C6;
+    border-radius: 8px;
+    color: #3077C6;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.promotion__close {
+    position: relative;
+}
+
+.promotion__close-img {
+    margin: 24px 24px 0 0;
 }
