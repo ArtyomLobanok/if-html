@@ -164,8 +164,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
-
+    max-width: 52%;
+    height: auto;
     margin: 0 0 64px -12px;
+    border-radius: 8px;
+    background-color: #F3F3F4;
 }
 
 .destinations {
@@ -268,20 +271,25 @@ h1, h2, h3, h4, h5, h6 {
 /*switcher*/
 .switcher__items {
     display: block;
-
+    width: 100%;
+    height: auto;
     cursor: pointer;
-    background-color: #F3F3F4;
 }
 
-.switcher__items.active {
+.switcher__items:hover {
     background-color: #3077C6;
     border-radius: 8px;
-    color: #FFFFFF;
 }
 
 .switcher__catigory {
     display: block;
-    padding: 17px 52px;
+    padding: 17px 0;
+    color: #383838;
     font-size: 24px;
     text-align: center;
+    text-decoration: none;
+}
+
+.switcher__catigory:hover {
+    color: #FFFFFF;
 }
