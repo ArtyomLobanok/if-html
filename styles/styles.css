@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section__header {
     width: 100%;
-    margin: 0 auto 80px;
+    margin: 0 auto 104px;
     text-align: center;
 }
 
@@ -49,22 +49,27 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px auto 0
 }
 
-/*Card*/
-.card {
+.section__title2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/*Offer*/
+.offer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 -15px;
 }
 
-.card__item {
+.offer__item {
     display: flex;
     flex-direction: column;
     width: 25%;
     padding: 0 15px;
 }
 
-.card__img {
+.offer__img {
     display: flex;
     justify-content: center;
     max-width: 100%;
@@ -72,11 +77,79 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 48px;
 }
 
-.card__info {
+.offer__info {
     text-align: center;
 }
 
-.card__name {
+.offer__name {
     font-size: 24px;
     font-weight: 400;
+}
+
+/*Overviews*/
+#loves {
+    background: #EAF0F9;
+}
+
+.overviews {
+    position: relative;
+}
+
+.overviews__block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 0 -12px;
+}
+
+.overviews__item {
+    display: block;
+    flex-direction: column;
+    max-width: 25%;
+    margin-right: 16px;
+}
+
+.overviews__item:last-child {
+    margin-right: 0;
+}
+
+.overviews__photo {
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 24px;
+}
+
+.overviews__tittle {
+    margin-bottom: 32px;
+    font-size: 24px;
+    color: #3077C6;
+}
+
+.overviews__location {
+    font-size: 24px;
+    color: #BFBFBF;
+}
+
+.overviews__btn {
+    font-size: 30px;
+    position: absolute;
+    top: 24%;
+    z-index: 1;
+    text-decoration-line: none;
+}
+
+.overviews__btn:after {
+    display: block;
+}
+
+.overviews__btn--next {
+    padding: 0 15px;
+    color: #383838;
+    right: -40px;
+    background: #F3F3F4;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
 }
