@@ -149,8 +149,12 @@ label {
     color: #F5BD41;
 }
 
-.nav__link.active {
-    color: #F5BD41;
+.nav__link-icon {
+    display: inline-block;
+    vertical-align: center;
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .nav__link:hover:after,
@@ -193,8 +197,9 @@ label {
     cursor: pointer;
 }
 
-.input__place:focus {
-    color: #F5BD41;
+.input__place:focus,
+.input__date-range:focus,
+.input__amount-required:focus {
     outline: 3px solid #F5BD41;
 }
 
