@@ -371,7 +371,7 @@ label {
 .overviews__btn--next {
     padding: 0 15px;
     color: #383838;
-    right: -40px;
+    right: -32px;
     background: #F3F3F4;
     border-radius: 50%;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
@@ -584,3 +584,127 @@ label {
 .promotion__close-img {
     margin: 24px 24px 0 0;
 }
+
+/*Reviews*/
+
+.reviews {
+    position: relative;
+}
+
+.reviews__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: #383838;
+    line-height: 1.2;
+}
+
+.reviews__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    background: #EAF0F9;
+    font-size: 18px;
+}
+
+.reviews__item:last-child {
+    margin-right: 0;
+}
+
+.reviews__header {
+    display: block;
+}
+
+.reviews__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews__name-location {
+    color: #3077C6;
+}
+
+.reviews__tittle {
+    display: inline-block;
+    padding: 24px 0 0 24px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.reviews__location {
+    padding-left: 24px;
+    margin-bottom: 24px;
+}
+
+.reviews__rating {
+    display: flex;
+    justify-content: flex-end;
+    margin: 24px 24px 0 0;
+}
+
+.reviews__rating-count {
+    padding: 4px 11px;
+    margin-bottom: 8px;
+    border: 1px solid #10367C;
+    border-radius: 8px;
+    background-color: #10367C;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.reviews__rating-count:hover {
+    color: #F5BD41;
+}
+
+.reviews__views {
+    margin-right: 24px;
+    font-size: 14px;
+    color: #BFBFBF;
+}
+
+.reviews__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    top: 23%;
+    font-size: 27px;
+    z-index: 1;
+    text-decoration-line: none;
+}
+
+.reviews__btn:after {
+    display: block;
+}
+
+.reviews__btn--next {
+    padding: 0 15px;
+    color: #383838;
+    background: #F3F3F4;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+/*Review*/
+.review__info {
+    display: flex;
+}
+
+.review__avatar {
+    display: block;
+    padding: 0 16px 17px 24px;
+}
+
+.review__name {
+    padding-bottom: 8px;
+}
+
+.review__country {
+    color: #BFBFBF;
+}
+
+.review__text {
+    padding: 0 24px 66px;
+}
+
