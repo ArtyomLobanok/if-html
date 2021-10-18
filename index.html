@@ -13,6 +13,68 @@
     <title>TripHouse-site</title>
 </head>
 <body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo" data-scroll="#intro">
+                <img class="header__image-logo" src="./assets/images/logo_vector.svg" alt="Logotype">
+            </div>
+            <nav class="nav" id="nav">
+                <div class="nav__right">
+                    <div class="nav__text-link">
+                        <a class="nav__link" href="#">Stays</a>
+                        <a class="nav__link" href="#">Attractions</a>
+                    </div>
+                    <div class="nav__icons-link">
+                        <a class="nav__link-icon" href="#">
+                            <img class="header__image-logo" src="./assets/images/Night.svg" alt="Night">
+                        </a>
+                        <a class="nav__link-icon" href="#">
+                            <img class="header__image-logo1" src="./assets/images/AccountCircle.svg" alt="Account_logo">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class="intro__title">Discover stays to live, work or just relax</h1>
+        </div>
+        <div class="intro__inputs">
+            <div class="inputs__title">
+                <div class="input__name">
+                    Your destination or hotel name
+                </div>
+                <div class="input__range-date">
+                    Check-in — Check-out
+                </div>
+            </div>
+            <form action="/" method="post" id="search">
+                <label class="input__block">
+                    <input class="input__place" type="text" name="place" id="place" value=""
+                           placeholder="New York">
+                    <input class="input__date-range" type="date" name="date" min="2017-04-01" max="2017-04-30" id="date" value=""
+                           placeholder="Tue 15 Sept — Sat 19 Sept">
+                    <input class="input__amount-required" type="text" name="amount" id="amount" value=""
+                           placeholder="2 Adults - 0 Children - 1 Room">
+                    <button class="input__submit" type="submit" name="search" value="">Search</button>
+                </label>
+            </form>
+        </div>
+        <div class="intro__footer-icons">
+            <div class="intro__icon">
+                <img class="intro__icon" src="./assets/images/google-play-badge.png" alt="#">
+            </div>
+            <div class="intro__icon">
+                <img class="intro__icon" src="./assets/images/apstore.png" alt="#">
+            </div>
+        </div>
+    </div><!-- /container-->
+</div><!-- /intro-->
 
 <section class="section" id="Offers">
     <div class="container">
@@ -60,6 +122,7 @@
         </div>
     </div>
 </section><!-- /section id Offers-->
+
 <section class="section" id="loves">
     <div class="container">
 
@@ -208,7 +271,7 @@
         <div class="promotion">
             <div class="promotion__content">
                 <div class="promotion__avatar">
-                    <img class="promotion__img" src="./assets/images/Group.png" alt="avatar" width="50px" height="44px">
+                    <img class="promotion__img" src="./assets/images/Group.png" alt="avatar">
                 </div>
 
                 <div class="promotion__main">
