@@ -34,7 +34,7 @@ label {
     width: 100%;
     min-height: 820px;
     position: relative;
-    background: url("/assets/images/header/header_background.png") center no-repeat;
+    background: url("../assets/images/header/header_background.png") center no-repeat;
     background-size: cover;
 }
 
