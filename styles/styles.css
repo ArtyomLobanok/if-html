@@ -186,14 +186,14 @@ label {
 }
 
 .input__name {
-    padding: 0 220px 25px 25px;
+    padding: 0 235px 25px 25px;
     font-size: 18px;
 }
 
 .input__block {
     position: relative;
     display: flex;
-    max-width: 1225px;
+    max-width: 1230px;
     width: 100%;
     height: auto;
     margin-bottom: 120px;
