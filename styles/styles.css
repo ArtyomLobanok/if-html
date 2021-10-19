@@ -30,17 +30,32 @@ label {
 
 /*INTRO*/
 .intro {
+    height: 100vh;
+    width: 100%;
+    min-height: 820px;
+    position: relative;
+    background: url("/assets/images/header/header_background.png") center no-repeat;
+    background-size: cover;
+}
+
+.intro__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     width: 100%;
     min-height: 820px;
-    position: relative;
-    background: url("/assets/images/header_background.png") center no-repeat;
-    background-size: cover;
-    /*linear-gradient( rgba(18, 18, 18, 0.25))
-    opacity: 0.8;*/
+}
+
+.intro__shadow--box {
+    position: absolute;
+    background-color: rgba(18, 18, 18, 0.25);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .intro__inner {
@@ -176,6 +191,7 @@ label {
 }
 
 .input__block {
+    position: relative;
     display: flex;
     max-width: 1223px;
     width: 100%;
@@ -188,7 +204,7 @@ label {
 
 .input__place {
     width: 100%;
-    padding: 22px 358px 21px 24px;
+    padding: 20px 210px 18px 24px;
     background-color: #F3F3F4;
     border: 1px solid #F3F3F4;
     border-radius: 8px;
@@ -198,37 +214,32 @@ label {
 }
 
 .input__place:focus,
-.input__date-range:focus,
-.input__amount-required:focus {
-    outline: 3px solid #F5BD41;
+.input__date--range:focus,
+.input__amount--required:focus {
+    outline: 2px solid #F5BD41;
+    margin: 2px;
 }
 
-.input__date-range {
+.input__date--range,
+.input__amount--required {
     width: 100%;
-    padding: 22px 24px 21px;
+    padding: 20px 0 18px;
     background-color: #F3F3F4;
     border: 1px solid #F3F3F4;
     border-radius: 8px;
     font-size: 18px;
     color: #383838;
     cursor: pointer;
-}
-
-.input__amount-required {
-    width: 100%;
     text-align: center;
-    padding: 22px 24px 21px;
-    background-color: #F3F3F4;
-    border: 1px solid #F3F3F4;
-    border-radius: 8px;
-    font-size: 18px;
-    color: #383838;
-    cursor: pointer;
 }
 
 .input__submit {
-    padding: 20px 57px;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 18px 57px;
     background-color: #3077C6;
+    border: 1px solid #3077C6;
     border-radius: 8px;
     font-size: 24px;
     font-weight: 500;
@@ -236,9 +247,9 @@ label {
 }
 
 .input__submit:hover {
-    background-color: #3077C6;
-    border: 1px solid #F5BD41;
-    color: #F5BD41;
+    background-color: #FFFFFF;
+    border: 1px solid #3077C6;
+    color: #3077C6;
     transition: opacity .1s linear;
 }
 
@@ -271,7 +282,7 @@ label {
     margin: 20px auto 0
 }
 
-.section__title2 {
+.section__title--second {
     font-size: 40px;
     font-weight: 500;
 }
@@ -399,6 +410,7 @@ label {
 }
 
 .destinations__block {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin: 0 -12px;
@@ -412,6 +424,11 @@ label {
     width: 295px;
     height: 295px;
     position: relative;
+
+}
+
+.destinations__content {
+    margin-bottom: 24px;
 }
 
 .destinations__item:last-child {
@@ -427,7 +444,8 @@ label {
 }
 
 .destinations__img {
-    background: linear-gradient(to bottom, #f38181, #fce38a);
+    background: rgba(56, 56, 56, 0.4);
+    box-shadow: inset 0 4px 70px rgba(56, 56, 56, 0.5);
 }
 
 .destinations__img img {
@@ -451,6 +469,7 @@ label {
     margin: 24px 0 32px;
     font-size: 24px;
     color: #3077C6;
+    text-decoration: none;
 }
 
 .destinations__btn {
@@ -488,8 +507,9 @@ label {
 }
 
 .destinations__button-clk:hover {
-    color: #F5BD41;
-    border: 1px solid #f5bd41;
+    color: #FFFFFF;
+    border: 1px solid #3077C6;
+    background-color: #3077C6;
     transition: opacity .1s linear;
 }
 
@@ -613,6 +633,35 @@ label {
 
 .reviews__header {
     display: block;
+    position: relative;
+}
+
+.reviews__header:hover .reviews__price {
+    opacity: 1;
+}
+
+.reviews__price-img {
+    background-color: rgba(56, 56, 56, 0.7);
+}
+
+.reviews__img img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.reviews__price {
+    width: 100%;
+    padding: 16px 0 11px 24px;
+    color: #FFFFFF;
+    opacity: 0;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .1s linear;
+    background-color: rgba(56, 56, 56, 0.7);
 }
 
 .reviews__content {
@@ -655,6 +704,7 @@ label {
 
 .reviews__rating-count:hover {
     color: #F5BD41;
+    transition: opacity .1s linear;
 }
 
 .reviews__views {
@@ -706,5 +756,55 @@ label {
 
 .review__text {
     padding: 0 24px 66px;
+}
+
+/*Footer*/
+.footer {
+    padding: 120px 0;
+    background-color: #10367C;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 16px;
+}
+
+.footer__col:last-child {
+    margin-right: 0;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 163px;
+}
+
+.footer__col--item {
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__col--item:hover {
+    color: #F5BD41;
+    transition: opacity .1s linear;
+}
+
+/*copyright*/
+
+.copyright span {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
 }
 
