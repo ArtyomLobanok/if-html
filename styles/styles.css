@@ -16,10 +16,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-label {
-    vertical-align: center;
-}
-
 /*Container*/
 .container {
     width: 100%;
@@ -105,20 +101,11 @@ label {
 }
 
 .header__inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 195px;
-}
-
-.header__image-logo {
-    margin-right: 25px;
-}
-
-.header__image-logo1 {
-    position: relative;
-    top: 5px;
-    left: -5px;
 }
 
 /*Navigation*/
@@ -164,17 +151,35 @@ label {
     color: #F5BD41;
 }
 
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
 .nav__link-icon {
     display: inline-block;
-    vertical-align: center;
     position: relative;
+    margin-right: 25px;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.nav__link:hover:after,
-.nav__link.active:after {
-    opacity: 1;
+.nav__link-icon2 {
+    position: relative;
+    top: 5px;
+}
+
+.nav__icons-link {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav__hamburger {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: 1;
+    display: none;
 }
 
 /*Input*/
@@ -200,6 +205,7 @@ label {
     background-color: #F3F3F4;
     border: 0 solid #F3F3F4;
     border-radius: 8px;
+    vertical-align: center;
 }
 
 .input__place {
@@ -262,6 +268,7 @@ label {
 }
 
 .section__header {
+    position: relative;
     width: 100%;
     margin: 0 auto 104px;
     text-align: center;
@@ -272,18 +279,14 @@ label {
     font-weight: 500;
 }
 
-.section__title:after {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 4px;
-    background-color: #F5BD41;
-    margin: 20px auto 0
-}
-
-.section__title--second {
-    font-size: 40px;
-    font-weight: 500;
+.section__title-line {
+    position: absolute;
+    width: 8%;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    size: 100px;
+    border: 2px solid #F5BD41;
 }
 
 /*Offer*/
@@ -795,5 +798,46 @@ label {
     font-size: 14px;
     color: #FFFFFF;
     text-align: center;
+}
+
+@media (max-width: 480px) {
+
+    /*Intro*/
+    .intro {
+        min-height: 533px;
+    }
+
+    .intro__content {
+        min-height: 328px;
+    }
+
+    .intro__inner {
+        max-width: 328px;
+        margin-bottom: 31px;
+    }
+
+    .intro__title {
+        font-size: 30px;
+    }
+
+    /*Header*/
+    .header {
+        padding: 12px 0;
+    }
+
+    .header__inner {
+        margin-bottom: 0;
+    }
+
+    .header__image-logotype {
+        max-width: 120px;
+    }
+
+    /*Navigation*/
+    .nav__text-link {
+        display: none;
+    }
+
+
 }
 
