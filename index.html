@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -62,15 +62,17 @@
                     </div>
                     <form action="/" method="post" id="search">
                         <label class="input__block">
-                            <input class="input__place" type="text" name="place" id="place" value=""
-                                   placeholder="New York">
-                            <input class="input__date--range" type="text" name="input__date--range"
-                                   id="input__date--range"
-                                   value=""
-                                   placeholder="Tue 15 Sept — Sat 19 Sept">
-                            <input class="input__amount--required" type="text" name="input__amount--required"
-                                   id="input__amount--required" value=""
-                                   placeholder="2 Adults — 0 Children — 1 Room">
+                            <input class="input__place" type="text" name="place" id="place"
+                                   value="Your destination or hotel name" placeholder="">
+                            <div class="input__date--range">
+                                <div class="input__date--start">Tue 15 Sept</div>
+                                <div class="input__date--end">— Sat 19 Sept</div>
+                            </div>
+                            <div class="input__amount--required">
+                                <div class="input__number--adult">2 Adults </div>
+                                <div class="input__number--children"> — 0 Children</div>
+                                <div class="input__number--room"> — 1 Room</div>
+                            </div>
                             <button class="input__submit" type="submit" name="search" value="">Search</button>
                         </label>
                     </form>

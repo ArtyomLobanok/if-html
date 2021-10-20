@@ -206,11 +206,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #F3F3F4;
     border: 0 solid #F3F3F4;
     border-radius: 8px;
-    vertical-align: center;
 }
 
 .input__place {
-    width: 100%;
     padding: 20px 210px 20px 25px;
     background-color: #F3F3F4;
     border: 1px solid #F3F3F4;
@@ -220,23 +218,30 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-.input__place:focus,
-.input__date--range:focus,
-.input__amount--required:focus {
+.input__place:focus {
     outline: 2px solid #F5BD41;
 }
 
 .input__date--range,
 .input__amount--required {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding: 20px 0;
-    background-color: #F3F3F4;
-    border: 1px solid #F3F3F4;
     border-radius: 8px;
     font-size: 18px;
     color: #383838;
     cursor: pointer;
-    text-align: center;
+}
+
+.input__date--range:hover,
+.input__amount--required:hover {
+outline: 2px solid #F5BD41;
+}
+
+.input__number--adult,
+.input__number--children {
+    margin-right: 5px;
 }
 
 .input__submit {
@@ -801,24 +806,67 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
 
     /*Intro*/
     .intro {
-        min-height: 533px;
+        height: auto;
+        min-height: 535px;
+    }
+
+    .intro__shadow--box {
+        height: auto;
+        background: rgba(0, 0, 0, 0) ;
     }
 
     .intro__content {
+        height: auto;
         min-height: 328px;
+        justify-content: normal;
+        margin-top: 90px;
     }
 
     .intro__inner {
         max-width: 328px;
-        margin-bottom: 31px;
+        margin-bottom: 30px;
     }
 
     .intro__title {
         font-size: 30px;
+    }
+
+    /*Inputs*/
+    .inputs__title {
+        display: none;
+    }
+
+    .input__block {
+        display: flex;
+        flex-direction: column;
+        max-width: 328px;
+        margin-bottom: 30px;
+        background-color: #F3F3F4;
+        border: 2px solid #F5BD41;
+        border-radius: 8px;
+    }
+
+    .input__place {
+        padding: 15px 0 15px 35px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .input__date--start,
+    .input__date--end,
+    .input__number--adult,
+    .input__number--children,
+    .input__number--room,
+    .input__submit     {
+        width: 100%;
+        border: 2px solid #F5BD41;
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: 0;
     }
 
     /*Header*/
@@ -827,7 +875,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .header__inner {
-        margin-bottom: 0;
+        margin-bottom: 40px;
     }
 
     .header__image-logotype {
@@ -839,6 +887,9 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
 
-
+    /*Section*/
+    .section {
+        padding: 40px 0;
+    }
 }
 
