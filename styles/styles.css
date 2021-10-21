@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav__right {
     display: flex;
     align-items: center;
-    vertical-align: center;
+    justify-content: center;
 }
 
 .nav__link {
@@ -344,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .overviews__item--first,
-overviews__item--second {
+.overviews__item--second {
     display: block;
     flex-direction: column;
     max-width: 25%;
@@ -768,7 +768,6 @@ overviews__item--second {
 .footer__inner {
     display: flex;
     justify-content: space-between;
-
 }
 
 .footer__col {
@@ -782,6 +781,27 @@ overviews__item--second {
     margin-right: 0;
 }
 
+.footer__header {
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.footer__header--col {
+    width: 33.333333%;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__header--item {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .footer__links {
     display: flex;
     flex-direction: column;
@@ -791,7 +811,7 @@ overviews__item--second {
 .footer__col--item {
     margin-bottom: 25px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -889,6 +909,27 @@ overviews__item--second {
     /*Navigation*/
     .nav__text-link {
         display: none;
+    }
+
+    .nav__link-icon {
+        margin-right: 15px;
+    }
+
+    .nav__link-icon2 {
+        margin-right: 40px;
+    }
+
+    .nav__icon {
+        max-width: 16px;
+    }
+
+    .nav__icon2 {
+        max-width: 24px;
+    }
+
+    .nav__hamburger {
+        display: block;
+        top: 2%;
     }
 
     /*Section*/
@@ -1072,6 +1113,11 @@ overviews__item--second {
 
     .switcher__category:hover {
         color: #FFFFFF;
+    }
+
+    /*Promotion*/
+    .section--promotion {
+        display: none;
     }
 }
 
