@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 .input__submit {
     position: relative;
     top: 0;
-    right: 0;
+    right: -1px;
     padding: 20px 55px;
     background-color: #3077C6;
     border: 1px solid #3077C6;
@@ -765,11 +765,41 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #10367C;
 }
 
+.footer__mobile {
+    display: none;
+}
+
+.footer__header {
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.footer__header-content {
+    display: flex;
+}
+
+.footer__header--col {
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.footer__header--item {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .footer__inner {
     display: flex;
     justify-content: space-between;
 }
 
+.footer__logo {
+    margin: 0 auto;
+}
 .footer__col {
     display: flex;
     flex-direction: column;
@@ -779,27 +809,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__col:last-child {
     margin-right: 0;
-}
-
-.footer__header {
-    display: flex;
-    font-weight: 500;
-    margin-bottom: 25px;
-}
-
-.footer__header--col {
-    width: 33.333333%;
-    font-size: 20px;
-    font-weight: 400;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.footer__header--item {
-    font-size: 20px;
-    font-weight: 400;
-    color: #FFFFFF;
-    text-decoration: none;
 }
 
 .footer__links {
@@ -826,7 +835,6 @@ h1, h2, h3, h4, h5, h6 {
 .copyright span {
     font-size: 14px;
     color: #FFFFFF;
-    text-align: center;
 }
 
 @media (max-width: 360px) {
@@ -1113,6 +1121,51 @@ h1, h2, h3, h4, h5, h6 {
 
     .switcher__category:hover {
         color: #FFFFFF;
+    }
+
+    /*Footer*/
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer__mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .footer__inner {
+        display: none;
+    }
+    .footer__header {
+        margin-bottom: 40px;
+        line-height: 1;
+    }
+
+    .footer__header--col {
+        margin-right: 15px;
+    }
+
+    .footer__header--item {
+        font-size: 15px;
+    }
+
+    .footer__header--col:last-child {
+        margin-right: 0;
+    }
+
+    .footer__header--item:hover {
+        text-decoration: underline;
+    }
+
+    /*Copyright*/
+
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /*Promotion*/
