@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: #383838;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 *,
@@ -19,8 +19,8 @@ h1, h2, h3, h4, h5, h6 {
 /*Container*/
 .container {
     width: 100%;
-    max-width: 1260px;
-    padding: 0 15px;
+    max-width: 1264px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 .input__block {
     position: relative;
     display: flex;
-    max-width: 1230px;
+    max-width: 1232px;
     width: 100%;
     height: auto;
     margin-bottom: 120px;
@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 .input__submit {
     position: relative;
     top: 0;
-    right: -1px;
+    right: 0px;
     padding: 20px 55px;
     background-color: #3077C6;
     border: 1px solid #3077C6;
@@ -348,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     flex-direction: column;
     max-width: 25%;
-    margin-right: 15px;
+    margin-right: 16px;
 }
 
 .overviews__item--second:last-child {
@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .destinations__card {
-    margin-right: 15px;
+    margin-right: 16px;
 }
 
 .destinations__item {
@@ -625,7 +625,7 @@ h1, h2, h3, h4, h5, h6 {
 .reviews__item {
     display: flex;
     flex-direction: column;
-    margin-right: 15px;
+    margin-right: 16px;
     background: #EAF0F9;
     font-size: 18px;
 }
@@ -804,7 +804,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     width: 33.333333%;
-    margin-right: 15px;
+    margin-right: 16px;
 }
 
 .footer__col:last-child {
