@@ -16,22 +16,26 @@
 <header class="header" id="header">
     <div class="container">
         <div class="header__inner">
-            <div class="header__logo" data-scroll="#intro">
+            <div class="header__logo">
                 <img class="header__image-logotype" src="./assets/images/header/logo_vector.svg" alt="Logotype">
             </div>
-            <nav class="nav" id="nav">
+            <nav class="nav">
                 <div class="nav__right">
                     <div class="nav__text-link">
                         <a class="nav__link" href="#">Stays</a>
                         <a class="nav__link" href="#">Attractions</a>
                     </div>
                     <div class="nav__icons-link">
-                        <a class="nav__link-icon" href="#">
-                            <img class="nav__icon" src="./assets/images/header/Night.svg" alt="Night">
-                        </a>
-                        <a class="nav__link-icon2" href="#">
-                            <img class="nav__icon2" src="./assets/images/header/AccountCircle.svg" alt="Account_logo">
-                        </a>
+                        <div class="nav__icons--link-first">
+                            <a class="nav__link-icon" href="#">
+                                <img class="nav__icon" src="./assets/images/header/Night.svg" alt="Night">
+                            </a>
+                        </div>
+                        <div class="nav__icons--link-second">
+                            <a class="nav__link-icon2" href="#">
+                                <img class="nav__icon2" src="./assets/images/header/AccountCircle.svg" alt="Account_logo">
+                            </a>
+                        </div>
                         <div class="nav__hamburger">
                             <a class="nav__hamburger-icon" href="#">
                                 <img class="nav__hamburger-img" src="./assets/images/header/menu.svg" alt="Image Menu">
@@ -60,10 +64,11 @@
                             Check-in — Check-out
                         </div>
                     </div>
-                    <form action="/" method="post" id="search">
-                        <label class="input__block">
+                    <form>
+                        <div class="input__block">
+                            <label for="place"></label>
                             <input class="input__place" type="text" name="place" id="place"
-                                   value="New York" placeholder="">
+                                                              value="New York" placeholder="">
                             <div class="input__date--range">
                                 <div class="input__date--start">Tue 15 Sept</div>
                                 <div class="input__date--end">— Sat 19 Sept</div>
@@ -74,7 +79,7 @@
                                 <div class="input__number--room"> — 1 Room</div>
                             </div>
                             <button class="input__submit" type="submit" name="search" value="">Search</button>
-                        </label>
+                        </div>
                     </form>
                 </div>
                 <div class="intro__footer-icons">
@@ -471,7 +476,7 @@
         <div class="footer__mobile">
             <div class="footer__header">
                 <div class="footer__logo">
-                    <img src="./assets/images/footer/logo_vector.png">
+                    <img src="./assets/images/footer/logo_vector.png" alt="">
                 </div>
             </div>
             <div class="footer__header-content">
@@ -490,7 +495,6 @@
                         Support
                     </a>
                 </div>
-            </div>
         </div>
         <div class="footer__inner">
             <div class="footer__col footer__col--first">
