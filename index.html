@@ -13,75 +13,63 @@
     <title>TripHouse-site</title>
 </head>
 <body>
-<header class="header" id="header">
+<header class="header">
     <div class="container">
         <div class="header__inner">
-            <div class="header__logo">
-                <img class="header__image-logotype" src="./assets/images/header/logo_vector.svg" alt="Logotype">
-            </div>
-            <nav class="nav">
-                <div class="nav__right">
-                    <div class="nav__text-link">
-                        <a class="nav__link" href="#">Stays</a>
-                        <a class="nav__link" href="#">Attractions</a>
-                    </div>
-                    <div class="nav__icons-link">
-                        <div class="nav__icons--link-first">
-                            <a class="nav__link-icon" href="#">
-                                <img class="nav__icon" src="./assets/images/header/Night.svg" alt="Night">
-                            </a>
-                        </div>
-                        <div class="nav__icons--link-second">
-                            <a class="nav__link-icon2" href="#">
-                                <img class="nav__icon2" src="./assets/images/header/AccountCircle.svg" alt="Account_logo">
-                            </a>
-                        </div>
-                        <div class="nav__hamburger">
-                            <a class="nav__hamburger-icon" href="#">
-                                <img class="nav__hamburger-img" src="./assets/images/header/menu.svg" alt="Image Menu">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="header__logo"><img src="./assets/images/header/logo_vector.svg" alt="Img logotype"></div>
+            <nav class="navigation">
+                <a class="nav__link active" href="#">Stays</a>
+                <a class="nav__link" href="#">Attractions</a>
+                <a class="nav__link" href="#">
+                    <img class="nav__icon" src="./assets/images/header/Night.svg" alt="Night">
+                </a>
+                <a class="nav__link" href="#">
+                    <img class="nav__icon" src="./assets/images/header/AccountCircle.svg" alt="Account_logo">
+                </a>
             </nav>
+            <a class="nav__link nav__hamburger" href="#">
+                <img class="nav__hamburger-img" src="./assets/images/header/menu.svg" alt="Image Menu">
+            </a>
         </div>
     </div>
 </header>
 
-<div class="intro" id="intro">
+<div class="intro">
     <div class="intro__shadow--box">
         <div class="intro__content">
             <div class="container">
                 <div class="intro__inner">
                     <h1 class="intro__title">Discover stays <br> to live, work or just relax</h1>
                 </div>
-                <div class="intro__inputs">
-                    <div class="inputs__title">
-                        <div class="input__name">
-                            Your destination or hotel name
+                <form class="intro__information">
+                    <div class="intro__inputs">
+                        <div class="inputs__title">
+                            <div class="input__name">
+                                Your destination or hotel name
+                            </div>
+                            <div class="input__range-date">
+                                Check-in — Check-out
+                            </div>
                         </div>
-                        <div class="input__range-date">
-                            Check-in — Check-out
-                        </div>
-                    </div>
-                    <form>
                         <div class="input__block">
                             <label for="place"></label>
                             <input class="input__place" type="text" name="place" id="place"
-                                                              value="New York" placeholder="">
+                                   value="New York" placeholder="">
                             <div class="input__date--range">
                                 <div class="input__date--start">Tue 15 Sept</div>
                                 <div class="input__date--end">— Sat 19 Sept</div>
                             </div>
                             <div class="input__amount--required">
                                 <div class="input__number--adult">2 Adults</div>
+                                <hr class="input__border">
                                 <div class="input__number--children"> — 0 Children</div>
+                                <hr class="input__border">
                                 <div class="input__number--room"> — 1 Room</div>
                             </div>
                             <button class="input__submit" type="submit" name="search" value="">Search</button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
                 <div class="intro__footer-icons">
                     <a class="intro__icon" href="https://play.google.com/store" target="_blank">
                         <img class="intro__icon" src="./assets/images/header/google-play-badge.png"
@@ -171,7 +159,7 @@
                     </div>
 
                     <div class="overviews__item--second">
-                        <img class="overviews__photo" src="./assets/images/loves/Leopold.png"
+                        <img class="overviews__photo" src="./assets/images/loves/Kunerad.png"
                              alt="Picture VillaKunerad">
                         <div class="overviews__tittle">Villa Kunerad</div>
                         <div class="overviews__location">Vysokie Tatry, Slowakia</div>
@@ -197,15 +185,9 @@
         </div>
 
         <div class="destinations__switcher">
-            <div class="switcher__items active">
-                <a class="switcher__category" href="#">Regions</a>
-            </div>
-            <div class="switcher__items">
-                <a class="switcher__category" href="#">Cities</a>
-            </div>
-            <div class="switcher__items">
-                <a class="switcher__category" href="#">Places of interest</a>
-            </div>
+            <a class="switcher__category active" href="#">Regions</a>
+            <a class="switcher__category" href="#">Cities</a>
+            <a class="switcher__category" href="#">Places of interest</a>
         </div>
 
         <div class="destinations">
@@ -412,9 +394,9 @@
                                 </div>
                             </div>
                             <div class="review__text">I've been in this hostel for a month and here is the best hostel
-                                of all
+                                of all <br>
                                 Excellent management of excellent and ethical staff and bedrooms Bathrooms are always
-                                clean and excellent
+                                clean and excellent <br>
                                 Most importantly, those who work here are kind and good-natured.
                             </div>
                         </div>
@@ -458,9 +440,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="review__text">Great location, really pleasant and clean rooms, but the thing
-                                that makes this such a good place to stay are the staff. All of the people are
-                                incredibly helpful and generous with their time and advice.
+                            <div class="review__text">Efficient, friendly, professional, and appropriately attentive.
+                                Great hotel in a great location. Easy access to all the surrounding historical sites.
+                                Staff is fantastic. Will definitely stay at this location during my next stay in
+                                Marocco.
                             </div>
                         </div>
                     </div>
@@ -476,7 +459,7 @@
         <div class="footer__mobile">
             <div class="footer__header">
                 <div class="footer__logo">
-                    <img src="./assets/images/footer/logo_vector.png" alt="">
+                    <img src="./assets/images/footer/logo_vector.png" alt="Img footer logotype">
                 </div>
             </div>
             <div class="footer__header-content">
@@ -495,6 +478,7 @@
                         Support
                     </a>
                 </div>
+            </div>
         </div>
         <div class="footer__inner">
             <div class="footer__col footer__col--first">
@@ -554,7 +538,7 @@
         <div class="copyright">
             <span>© 2020 Triphouse, Inc. All rights reserved</span>
         </div>
-    </div>
+
     </div><!--/container-->
 </footer><!--/footer-->
 
