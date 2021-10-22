@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .destinations__switcher {
     display: flex;
-    max-width: 51%;
+    max-width: 47%;
     margin-bottom: 65px;
     border-radius: 8px;
     background-color: #F3F3F4;
@@ -525,11 +525,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .switcher__category:first-child {
-    padding: 16px 52px;;
+    padding: 16px 52px;
 }
 
 .switcher__category:last-child {
-    padding: 16px 30px;
+    padding: 16px 65px;
 }
 
 .switcher__category.active,
