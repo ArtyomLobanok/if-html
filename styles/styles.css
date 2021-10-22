@@ -127,7 +127,8 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     display: block;
     width: 100%;
-    border: 2px solid #F5BD41 ;
+    background-color: #F5BD41;
+    border: 2px solid #F5BD41;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -225,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .input__date--start {
-    padding-left:24px;
+    padding-left: 24px;
 }
 
 .input__date--end {
@@ -292,6 +293,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     left: 0;
     size: 100px;
+    background-color: #F5BD41;
     border: 2px solid #F5BD41;
 }
 
@@ -340,13 +342,10 @@ h1, h2, h3, h4, h5, h6 {
 .overviews__block {
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
 }
 
 .overviews__item--first,
 .overviews__item--second {
-    display: block;
-    flex-direction: column;
     max-width: 25%;
     margin-right: 16px;
 }
@@ -365,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .overviews__tittle {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 24px;
     color: #3077C6;
 }
@@ -421,7 +420,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
-.destinations__card {
+.destinations__card--first,
+.destinations__card--second {
     margin-right: 16px;
 }
 
@@ -751,40 +751,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .review__text {
-    padding: 0 25px 70px;
+    padding: 0 24px 18px;
 }
 
 /*Footer*/
 .footer {
     padding: 120px 0;
     background-color: #10367C;
-}
-
-.footer__mobile {
-    display: none;
-}
-
-.footer__header {
-    display: flex;
-    font-weight: 500;
-    margin-bottom: 25px;
-}
-
-.footer__header-content {
-    display: flex;
-}
-
-.footer__header--col {
-    font-size: 15px;
-    color: #FFFFFF;
-}
-
-.footer__header--item {
-    margin-bottom: 25px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #FFFFFF;
-    text-decoration: none;
 }
 
 .footer__inner {
@@ -794,7 +767,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__logo {
     margin: 0 auto;
+    display: none;
 }
+
 .footer__col {
     display: flex;
     flex-direction: column;
@@ -806,18 +781,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
 }
 
-.footer__links {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 130px;
-}
-
 .footer__col--item {
     margin-bottom: 25px;
     font-size: 20px;
     font-weight: 400;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.footer__col--item:first-child {
+    font-weight: 500;
 }
 
 .footer__col--item:hover {
@@ -864,6 +837,10 @@ h1, h2, h3, h4, h5, h6 {
     /*Inputs*/
     .inputs__title {
         display: none;
+    }
+
+    .intro__information {
+        margin-bottom: 0;
     }
 
     .input__block {
@@ -1034,12 +1011,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /*Destinations*/
-
     .destinations__switcher {
         justify-content: space-between;
         max-width: 100%;
-        margin-bottom: 25px;
-        background-color: #FFF;
+        margin-bottom: 24px;
+        background-color: #FFFFFF;
+    }
+
+    .destinations__card--first {
+        width: 50%;
+    }
+
+    .destinations__card--second {
+        display: none;
     }
 
     .destinations__content {
@@ -1047,75 +1031,141 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .destinations__photo {
-       max-width: 155px;
+        max-width: 155px;
     }
 
-     .destinations__button {
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        position: absolute;
-        top: 40%;
-        left: 0;
-        z-index: 2;
-        transform: translate3d(0, -50%, 0);
-        transition: opacity .1s linear;
-    }
-
-    .destinations__tittle {
-        margin: 25px 0 30px;
-        font-size: 24px;
-        color: #3077C6;
-        text-decoration: none;
-    }
-
-    .destinations__btn {
-        font-size: 26px;
-        position: absolute;
-        left: 48.5%;
-        bottom: -26%;
-        z-index: 1;
-        text-decoration-line: none;
-        writing-mode: vertical-rl;
-    }
-
-    .destinations__btn:after {
-        display: block;
-    }
-
-    .destinations__btn--next {
-        padding: 10px 0;
-        color: #383838;
-        background: #F3F3F4;
-        border-radius: 50%;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    .destinations__button {
+        top: 45%;
     }
 
     .destinations__button-clk {
-        padding: 15px 25px;
-        background-color: #FFFFFF;
-        border: 1px solid #3077C6;
-        border-radius: 8px;
-        color: #3077C6;
-        font-size: 18px;
-        text-decoration: none;
+        padding: 5px 15px;
+        font-size: 12px;
     }
 
-    .destinations__button-clk:hover {
-        color: #FFFFFF;
-        border: 1px solid #3077C6;
-        background-color: #3077C6;
-        transition: opacity .1s linear;
+    .destinations__tittle {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .destinations__btn {
+        font-size: 20px;
+        left: 94%;
+        bottom: 50%;
+        writing-mode: initial;
+    }
+
+    .destinations__btn--next {
+        padding: 0 10px;
     }
 
     /*switcher*/
     .switcher__category {
-        padding: 10px 0;
-        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 25px;
+        font-size: 19px;
+        margin-right: 16px;
     }
 
-    .switcher__category:hover {
-        color: #FFFFFF;
+    .switcher__category:first-child {
+        padding: 5px 15px;
+    }
+
+    .switcher__category:last-child {
+        padding: 5px 20px;
+        margin-right: 0;
+    }
+
+    /*Reviews*/
+
+    #reviews {
+        background-color: #EAF0F9;
+    }
+
+    .reviews__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        color: #383838;
+        line-height: 1.2;
+    }
+
+    .reviews__item {
+        display: none;
+    }
+
+    .reviews__item:first-child {
+        display: block;
+        width: 100%;
+    }
+
+    .reviews__header {
+        margin-bottom: 12px;
+    }
+
+    .reviews__photo {
+        max-width: 327px;
+    }
+
+    .reviews__price {
+        bottom: 0;
+    }
+
+    .reviews__tittle {
+        font-size: 15px;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+
+    .reviews__location {
+        padding-left: 0;
+        margin-bottom: 12px;
+    }
+
+    .reviews__rating {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .reviews__rating-count {
+        padding: 3px 9px;
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .reviews__views {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .reviews__btn {
+        display: none;
+    }
+
+    /*Review*/
+    .review__info {
+        margin-bottom: 16px;
+    }
+
+    .review__avatar {
+        padding: 0;
+        margin-right: 8px;
+    }
+
+    .review__name {
+        font-size: 15px;
+        padding-bottom: 0;
+        margin-bottom: 4px;
+    }
+
+    .review__text {
+        padding: 0;
+        margin-bottom: 32px;
+        font-size: 15px;
     }
 
     /*Footer*/
@@ -1123,40 +1173,41 @@ h1, h2, h3, h4, h5, h6 {
         padding: 40px 0;
     }
 
-    .footer__mobile {
-        display: flex;
-        flex-direction: column;
+    .footer__inner {
         justify-content: center;
-        align-items: center;
+    }
+
+    .footer__logo {
+        display: flex;
+        justify-content: center;
         margin-bottom: 30px;
     }
 
-    .footer__inner {
-        display: none;
-    }
-    .footer__header {
-        margin-bottom: 40px;
-        line-height: 1;
-    }
-
-    .footer__header--col {
-        margin-right: 15px;
+    .footer__col {
+        display: flex;
+        flex-direction: initial;
+        width: auto;
+        margin-right: 16px;
     }
 
-    .footer__header--item {
-        font-size: 15px;
-    }
-
-    .footer__header--col:last-child {
-        margin-right: 0;
-    }
-
-    .footer__header--item:hover {
+    .footer__col--item:first-child {
+        display: flex;
+        font-size: 18px;
         text-decoration: underline;
     }
 
-    /*Copyright*/
+    .footer__col--first,
+    .footer__col--second,
+    .footer__col--third {
+        padding: 0;
+    }
 
+    .footer__col--item {
+        display: none;
+    }
+
+
+    /*Copyright*/
     .copyright {
         display: flex;
         align-items: center;
