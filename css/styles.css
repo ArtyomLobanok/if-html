@@ -105,8 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
 }
 
-.nav__link:hover:after,
-.nav__link.active:after {
+.nav__link:hover:after {
     opacity: 1;
 }
 
@@ -197,7 +196,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     background-color: #FFF;
     border-radius: 8px;
-    padding: 0 130px 0 0;
 }
 
 .intro__form--input {
@@ -243,16 +241,12 @@ h1, h2, h3, h4, h5, h6 {
     top: -52px;
     font-size: 18px;
     color: #FFFFFF;
-    left: 0;
-    right: 0;
-    text-align: center;
 }
 
 .intro__second--input {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-right: 38px;
 }
 
 .intro__third--input {
@@ -281,12 +275,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__form--button:hover {
     color: #F5BD41;
-    border: 1px solid #FFFFFF;
-}
-
-.intro__form--button:hover {
-    color: #F5BD41;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #3077C6;
+    transition: 0.5s;
 }
 
 /*Section*/
@@ -951,6 +941,10 @@ h1, h2, h3, h4, h5, h6 {
         transition: .3s;
     }
 
+    .intro__form--input:focus {
+        outline: none;
+    }
+
     .intro__form--input:focus~.intro__form--label,
     .intro__form--input:not(:focus):valid~.intro__form--label {
         top: -10px;
@@ -1004,7 +998,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .intro__form--button:hover {
         color: #F5BD41;
-        border: 1px solid #FFFFFF;
+        border: 1px solid #3077C6;
     }
 
     /*Header*/
