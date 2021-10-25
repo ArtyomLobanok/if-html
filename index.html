@@ -45,85 +45,54 @@
                 <div class="intro__inner">
                     <h1 class="intro__title">Discover stays <br> to live, work or just relax</h1>
                 </div>
-                <div class="intro__form">
-                <form class="intro__information">
-                    <div class="intro__inputs">
-                        <div class="inputs__title">
-                            <div class="input__name">
-                                Your destination or hotel name
-                            </div>
-                            <div class="input__range-date">
-                                Check-in — Check-out
-                            </div>
-                        </div>
-                        <div class="input__block">
-                            <label for="place"></label>
-                            <input class="input__place" type="text" name="place" id="place"
-                                   value="New York" placeholder="">
-                            <div class="input__date--range">
-                                <div class="input__date--start">Tue 15 Sept</div>
-                                <div class="input__date--end">— Sat 19 Sept</div>
-                            </div>
-                            <div class="input__amount--required">
-                                <div class="input__number--adult">2 Adults</div>
-                                <hr class="input__border">
-                                <div class="input__number--children"> — 0 Children</div>
-                                <hr class="input__border">
-                                <div class="input__number--room"> — 1 Room</div>
-                            </div>
-                            <button class="input__submit" type="submit" name="search" value="">Search</button>
-                        </div>
-                    </div>
-                </form>
-                </div>
 
-                <div class="dots"> <!-- /Общий блок с inp's+btn залитый цветом-->
-                    <form class="form">
-                        <div class="place">
-                            <div class="icon__search"><i class="fas fa-search"></i></div>  <!--ICON SEARCH-->
+                <div class="intro__form"> <!-- /Общий блок с inp's+btn залитый цветом-->
+                    <form class="intro__form--request">
+                        <div class="intro__first--input">
+                            <div class="intro__form--icon"><i class="fas fa-search"></i></div>  <!--ICON SEARCH-->
 
-                            <div class="form-item">
-                                <input type="text" name="name" id="name" class="form-input" required>
-                                <label class="form-label" for="name" >Your destination or hotel name</label>
+                            <div class="intro__form--item">
+                                <input type="text" name="name" id="name" class="intro__form--input" required>
+                                <label class="intro__form--label" for="name" >Your destination or hotel name</label>
                             </div>
                         </div>
 
 
-                        <div class="date__registration">
-                            <div class="form-item">
-                                <input type="text" name="in_date" id="in_date" class="form-input" required>
-                                <label class="form-label" for="in_date" >Check-in date</label>
+                        <div class="intro__second--input">
+                            <div class="intro__form--item">
+                                <input type="text" name="in_date" id="in_date" class="intro__form--input" required>
+                                <label class="intro__form--label" for="in_date" >Check-in date</label>
                             </div>
-                            <div class="form-item">
-                                <input type="text" name="out_date" id="out_date" class="form-input" required>
-                                <label class="form-label" for="out_date">Check-out date</label>
+                            <div class="intro__form--item">
+                                <input type="text" name="out_date" id="out_date" class="intro__form--input" required>
+                                <label class="intro__form--label" for="out_date">Check-out date</label>
                             </div>
                         </div>
 
-                        <div class="information">
+                        <div class="intro__third--input">
 
-                            <div class="form-item">
-                                <input type="text" name="Adults" id="Adults" class="form-input" required>
-                                <label class="form-label" for="Adults">Adults</label>
+                            <div class="intro__form--item">
+                                <input type="text" name="Adults" id="Adults" class="intro__form--input" required>
+                                <label class="intro__form--label" for="Adults">Adults</label>
                             </div>
 
-                            <hr class="devider"> <!-- /стилизовать и спрятать для mobile-->
+                            <hr class="intro__form--devider"> <!-- /стилизовать и спрятать для mobile-->
 
-                            <div class="form-item">
-                                <input type="text" name="Children" id="Children" class="form-input" required>
-                                <label class="form-label" for="Children">Children</label>
+                            <div class="intro__form--item">
+                                <input type="text" name="Children" id="Children" class="intro__form--input" required>
+                                <label class="intro__form--label" for="Children">Children</label>
                             </div>
 
-                            <hr class="devider"><!-- /стилизовать и спрятать для mobile-->
+                            <hr class="intro__form--devider"><!-- /стилизовать и спрятать для mobile-->
 
-                            <div class="form-item">
-                                <input type="text" name="Rooms" id="Rooms" class="form-input" required>
-                                <label class="form-label" for="Rooms">Rooms</label>
+                            <div class="intro__form--item">
+                                <input type="text" name="Rooms" id="Rooms" class="intro__form--input" required>
+                                <label class="intro__form--label" for="Rooms">Rooms</label>
                             </div>
 
                         </div>
-                        <div class="form-btn">
-                            <button>Search</button>
+                        <div class="intro__form--btn">
+                            <button class="intro__form--button">Search</button>
                         </div>
                 </form>
             </div>
