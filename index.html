@@ -30,9 +30,9 @@
                         <img class="nav__icon nav__account" src="./assets/images/header/AccountCircle.svg" alt="Account_logo">
                     </a>
                 </div>
-                <a class="nav__link nav__hamburger" href="#">
-                    <img class="nav__hamburger-img" src="./assets/images/header/menu.svg" alt="Image Menu">
-                </a>
+                <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
             </nav>
         </div>
     </div>
@@ -49,12 +49,14 @@
                 <div class="intro__form"> <!-- /Общий блок с inp's+btn залитый цветом-->
                     <form class="intro__form--request">
                         <div class="intro__first--input">
+
                             <div class="intro__form--icon"><i class="fas fa-search"></i></div>  <!--ICON SEARCH-->
 
                             <div class="intro__form--item">
                                 <input type="text" name="name" id="name" class="intro__form--input" required>
                                 <label class="intro__form--label" for="name" >Your destination or hotel name</label>
                             </div>
+
                         </div>
 
                         <div class="intro__second--input">
