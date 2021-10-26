@@ -759,6 +759,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Footer*/
 .footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
     padding: 120px 0;
     background-color: #10367C;
 }
