@@ -131,80 +131,42 @@ h1, h2, h3, h4, h5, h6 {
 /*Nav toggle*/
 .nav__toggle {
     width: 24px;
-    display: flex;
-
-    font-size: 0;
-    color: transparent;
-
+    height: 24px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border: 0;
-    background: none;
+    background: transparent;
+}
+
+.nav__toggle:hover {
     cursor: pointer;
-
-    position: relative;
-    top: 0;
-    right: 0;
-    z-index: 1;
 }
 
-.nav__toggle:focus {
-    outline: 0;
-}
-
-.nav__toggle__item {
+.nav__toggle span {
+    transition: all 0.3s;
+    height: 2px;
+    background-color: #FFFFFF;
     display: block;
-    width: 100%;
-    height: 2px;
-
-    background: #FFFFFF;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-
-    transition: background .2s linear;
+    width: 24px;
+    margin: 0.15625rem 0;
 }
 
-.nav__toggle__item:before,
-.nav__toggle__item:after {
-    content: "";
-    width: 100%;
-    height: 2px;
-
-    background: #FFFFFF;
-
-    position: absolute;
-    left: 0;
-    z-index: 1;
-
-    transition: transform .2s linear;
-}
-
-.nav__toggle__item:before {
-    top: -6px;
-}
-
-.nav__toggle__item:after {
-    bottom: -6px;
-}
-
-.nav__toggle.active .nav-toggle__item {
-    background: none;
-}
-
-.nav__toggle.active .nav-toggle__item:before {
+.nav__toggle:hover span:nth-child(1) {
+    transform: translate(4px, -1px) rotate(45deg);
     transform-origin: left top;
-    transform: rotate(45deg)
-    translate3d(0px, -2px, 0);
 }
 
-.nav__toggle.active .nav-toggle__item:after {
-    transform-origin: left bottom;
-    transform: rotate(-45deg)
-    translate3d(0px, 3px, 0);
+.nav__toggle:hover span:nth-child(2) {
+    transform: scale(0);
 }
+
+.nav__toggle:hover span:nth-child(3) {
+    transform: translate(-3px, -16px) rotate(-45deg);
+    transform-origin: right bottom;
+}
+
 
 /*INTRO*/
 .intro {
@@ -1080,6 +1042,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .header__inner {
         margin-bottom: 40px;
+        padding-top: 12px;
     }
 
     .header__image__logotype {
@@ -1119,11 +1082,8 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
 
-    .nav__hamburger {
+    .nav__toggle {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     /*Section*/

@@ -29,9 +29,11 @@
                     <a class="nav__link nav__link__icon" href="#">
                         <img class="nav__icon nav__account" src="./assets/images/header/AccountCircle.svg" alt="Account_logo">
                     </a>
-                    <button class="nav__toggle" id="nav_toggle" type="button">
-                        <span class="nav__toggle__item">Menu</span>
-                    </button>
+                    <div class="nav__toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -46,10 +48,10 @@
                     <h1 class="intro__title">Discover stays <br> to live, work or just relax</h1>
                 </div>
 
-                <div class="intro__form"> <!-- /Общий блок с inp's+btn залитый цветом-->
+                <div class="intro__form">
                     <form class="intro__form--request">
                         <div class="intro__first--input">
-                            <div class="intro__form--icon"><i class="fas fa-search"></i></div>  <!--ICON SEARCH-->
+                            <div class="intro__form--icon"><i class="fas fa-search"></i></div>
 
                             <div class="intro__form--item">
                                 <input type="text" name="name" id="name" class="intro__form--input" required>
@@ -75,14 +77,14 @@
                                 <label class="intro__form--label" for="Adults">Adults</label>
                             </div>
 
-                            <hr class="intro__form--devider"> <!-- /стилизовать и спрятать для mobile-->
+                            <hr class="intro__form--devider">
 
                             <div class="intro__form--item">
                                 <input type="text" name="Children" id="Children" class="intro__form--input" required>
                                 <label class="intro__form--label" for="Children">Children</label>
                             </div>
 
-                            <hr class="intro__form--devider"><!-- /стилизовать и спрятать для mobile-->
+                            <hr class="intro__form--devider">
 
                             <div class="intro__form--item">
                                 <input type="text" name="Rooms" id="Rooms" class="intro__form--input" required>
@@ -107,7 +109,7 @@
                 </div>
             </div><!-- /container-->
         </div>
-    </div>
+    </div><!-- /shadow box-->
 </div><!-- /intro-->
 
 <section class="section" id="Offers">
