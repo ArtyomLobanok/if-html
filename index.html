@@ -15,24 +15,26 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
-                <img class="header__image-logotype" src="./assets/images/header/logo_vector.svg" alt="Img logotype">
+                <img class="header__image__logotype" src="./assets/images/header/logo_vector.svg" alt="Img logotype">
             </div>
             <nav class="navigation">
-                <div class="nav__link-wrapper">
+                <div class="nav__link__wrapper">
                     <a class="nav__link active" href="#">Stays</a>
                     <a class="nav__link" href="#">Attractions</a>
                 </div>
-                <div class="nav__icons-wrapper">
-                    <a class="nav__link  nav__link--icon" href="#">
+                <div class="nav__icons__wrapper">
+                    <a class="nav__link  nav__link__icon" href="#">
                         <img class="nav__icon nav__changer" src="./assets/images/header/Night.svg" alt="Night">
                     </a>
-                    <a class="nav__link nav__link--icon" href="#">
+                    <a class="nav__link nav__link__icon" href="#">
                         <img class="nav__icon nav__account" src="./assets/images/header/AccountCircle.svg" alt="Account_logo">
                     </a>
+                    <div class="nav__toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <a class="nav__link nav__hamburger" href="#">
-                    <img class="nav__hamburger-img" src="./assets/images/header/menu.svg" alt="Image Menu">
-                </a>
             </nav>
         </div>
     </div>
@@ -46,10 +48,10 @@
                     <h1 class="intro__title">Discover stays <br> to live, work or just relax</h1>
                 </div>
 
-                <div class="intro__form"> <!-- /Общий блок с inp's+btn залитый цветом-->
+                <div class="intro__form">
                     <form class="intro__form--request">
                         <div class="intro__first--input">
-                            <div class="intro__form--icon"><i class="fas fa-search"></i></div>  <!--ICON SEARCH-->
+                            <div class="intro__form--icon"><i class="fas fa-search"></i></div>
 
                             <div class="intro__form--item">
                                 <input type="text" name="name" id="name" class="intro__form--input" required>
@@ -75,14 +77,14 @@
                                 <label class="intro__form--label" for="Adults">Adults</label>
                             </div>
 
-                            <hr class="intro__form--devider"> <!-- /стилизовать и спрятать для mobile-->
+                            <hr class="intro__form--devider">
 
                             <div class="intro__form--item">
                                 <input type="text" name="Children" id="Children" class="intro__form--input" required>
                                 <label class="intro__form--label" for="Children">Children</label>
                             </div>
 
-                            <hr class="intro__form--devider"><!-- /стилизовать и спрятать для mobile-->
+                            <hr class="intro__form--devider">
 
                             <div class="intro__form--item">
                                 <input type="text" name="Rooms" id="Rooms" class="intro__form--input" required>
@@ -107,7 +109,7 @@
                 </div>
             </div><!-- /container-->
         </div>
-    </div>
+    </div><!-- /shadow box-->
 </div><!-- /intro-->
 
 <section class="section" id="Offers">
@@ -121,7 +123,7 @@
         <div class="offer">
             <div class="offer__item">
                 <a class="offer__img" href="#" target="_blank">
-                    <img src="./assets/images/offer/Support.svg" alt="Support icon">
+                    <img class="offer__images" src="./assets/images/offer/Support.svg" alt="Support icon">
                 </a>
                 <div class="offer__info">
                     <div class="offer__name">Support 24/7</div>
@@ -130,7 +132,7 @@
 
             <div class="offer__item">
                 <a class="offer__img" href="#" target="_blank">
-                    <img src="./assets/images/offer/Communicate.svg" alt="Communicate directly icon">
+                    <img class="offer__images" src="./assets/images/offer/Communicate.svg" alt="Communicate directly icon">
                 </a>
                 <div class="offer__info">
                     <div class="offer__name">Communicate directly</div>
@@ -139,7 +141,7 @@
 
             <div class="offer__item">
                 <a class="offer__img" href="#" target="_blank">
-                    <img src="./assets/images/offer/Book.svg" alt="Book online icon">
+                    <img class="offer__images" src="./assets/images/offer/Book.svg" alt="Book online icon">
                 </a>
                 <div class="offer__info">
                     <div class="offer__name">Book online</div>
@@ -148,7 +150,7 @@
 
             <div class="offer__item">
                 <a class="offer__img" href="#" target="_blank">
-                    <img src="./assets/images/offer/reviews.svg" alt="Reviews icon">
+                    <img class="offer__images" src="./assets/images/offer/reviews.svg" alt="Reviews icon">
                 </a>
                 <div class="offer__info">
                     <div class="offer__name">Real guest reviews</div>
@@ -167,25 +169,30 @@
         <div class="overviews">
             <div class="overviews__block">
 
-                <div class="overviews__item--first">
+                <div class="overviews__item">
+
                     <div class="overviews__img">
                         <img class="overviews__photo" src="./assets/images/loves/Leopold.png"
                              alt="Picture Hotel Leopold">
                     </div>
+
                     <div class="overviews__tittle">Hotel Leopold</div>
                     <div class="overviews__location">Saint Petersburg, Russia</div>
                 </div>
 
-                <div class="overviews__item--first">
+                <div class="overviews__item">
+
+
                     <div class="overviews__img">
                         <img class="overviews__photo" src="./assets/images/loves/Sunshine.png"
                              alt="Picture Apartment Sunshine">
                     </div>
+
                     <div class="overviews__tittle">Apartment Sunshine</div>
                     <div class="overviews__location">Santa Cruz de Tenerife, Spain</div>
                 </div>
 
-                <div class="overviews__item--second">
+                <div class="overviews__item">
                     <div class="overviews__img">
                         <img class="overviews__photo" src="./assets/images/loves/Kunerad.png"
                              alt="Picture VillaKunerad">
@@ -194,17 +201,20 @@
                     <div class="overviews__location">Vysokie Tatry, Slowakia</div>
                 </div>
 
-                <div class="overviews__item--second">
+                <div class="overviews__item">
+
                     <div class="overviews__img">
                         <img class="overviews__photo" src="./assets/images/loves/Friendship.png"
                              alt="Picture Hostel Friendship">
                     </div>
+
                     <div class="overviews__tittle">Hostel Friendship</div>
                     <div class="overviews__location">Berlin, Germany</div>
                 </div>
-
             </div>
-            <a class="overviews__btn overviews__btn--next" href="#">&#10095;</a>
+            <a class="arrow overviews__btn__next" href="#">
+                <img class="overviews__arrow" src="./assets/images/arrow.svg" alt="Images arrow">
+            </a>
         </div>
     </div>
 </section><!-- /section--loves-->
@@ -223,9 +233,11 @@
         </div>
 
         <div class="destinations">
-            <a class="destinations__btn destinations__btn--next" href="#">&#10095;</a>
+            <a class="arrow destinations__btn__next" href="#">
+                <img class="destinations__arrow" src="./assets/images/arrow.svg" alt="Images arrow">
+            </a>
             <div class="destinations__block">
-                <div class="destinations__card--first">
+                <div class="destinations__card">
                     <div class="destinations__item">
                         <div class="destinations__content">
                             <div class="destinations__img">
@@ -243,8 +255,8 @@
                         </a>
                     </div>
                 </div>
-
-                <div class="destinations__card--first">
+<!--r-->
+                <div class="destinations__card">
                     <div class="destinations__item">
                         <div class="destinations__content">
                             <div class="destinations__img">
@@ -263,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="destinations__card--second">
+                <div class="destinations__card">
                     <div class="destinations__item">
                         <div class="destinations__content">
                             <div class="destinations__img">
@@ -282,7 +294,7 @@
                     </div>
                 </div>
 
-                <div class="destinations__card--second">
+                <div class="destinations__card">
                     <div class="destinations__item">
                         <div class="destinations__content">
                             <div class="destinations__img">
@@ -443,7 +455,9 @@
 
                         <div class="reviews__item">
                             <div class="reviews__header">
-                                <a class="reviews__btn reviews__btn--next" href="#">&#10095;</a>
+                                <a class="arrow reviews__btn__next" href="#">
+                                    <img class="reviews__arrow" src="./assets/images/arrow.svg" alt="Images arrow">
+                                </a>
                                 <div class="reviews__img">
                                     <img class="reviews__photo" src="./assets/images/reviews/Rokoko.png"
                                          alt="Picture Ubud Bali Resort&SPA">
@@ -534,7 +548,7 @@
                         Terms
                     </a>
                 </li>
-            </ul><!-- /.footer__col--first -->
+            </ul>
             <ul class="footer__col footer__col--second">
                 <li class="footer__col--item">
                     <a class="footer__col--link" href="#" target="_blank">
@@ -571,7 +585,7 @@
                         Hostels
                     </a>
                 </li>
-            </ul><!-- /.footer__col--second -->
+            </ul>
             <ul class="footer__col footer__col--third">
                 <li class="footer__col--item">
                     <a class="footer__col--link" href="#" target="_blank">
@@ -588,7 +602,7 @@
                         FAQ
                     </a>
                 </li>
-            </ul><!-- /.footer__col--third -->
+            </ul>
         </div>
         <div class="copyright">
             <span>© 2020 Triphouse, Inc. All rights reserved</span>
