@@ -306,7 +306,6 @@ h1, h2, h3, h4, h5, h6 {
 /*Intro Form*/
 
 .intro__form {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     max-width: 1232px;
@@ -340,6 +339,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 0 solid #FFF;
     outline: none;
     border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 
@@ -367,6 +367,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 12px;
     white-space: nowrap;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
     line-height: 42px;
     transition: .3s;
     font-size: 18px;
@@ -402,6 +403,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #3077C6;
     border: 1px solid #3077C6;
     border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 500;
     outline: none;
