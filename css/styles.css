@@ -60,6 +60,27 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.header__logo {
+    display: block;
+    width: 205px;
+    height: 40px;
+    fill: #3077C6;
+}
+
+.header__switcher__time {
+    display: block;
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+}
+
+.header__account {
+    display: block;
+    width: 40px;
+    height: 40px;
+    fill: #FFFFFF;
+}
+
 /*Navigation*/
 .navigation {
     display: flex;
@@ -93,6 +114,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__link:first-child {
     margin-left: 0;
+}
+
+.nav__link:nth-child(2) {
+    margin: 0;
 }
 
 .nav__link:last-child {
@@ -261,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__content {
     width: 100%;
-    margin-top: 293px;
+    margin-top: 268px;
     max-height: 533px;
 }
 
@@ -470,6 +495,13 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
     height: auto;
     margin-bottom: 50px;
+}
+
+.offer__images {
+    display: block;
+    width: 100px;
+    height: 100px;
+    fill: #3077C6;
 }
 
 .offer__info {
@@ -684,8 +716,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .promotion__avatar {
-    margin: 60px 22px 55px;
-    border: 1px solid #3077C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 24px 52px;
     border-radius: 50%;
     background-color: #FFFFFF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
@@ -700,9 +734,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .promotion__img {
-    margin: 20px;
-    position: relative;
-    top: 0;
+    display: block;
+    width: 58px;
+    height: 58px;
+    margin: 14px 14px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    fill: #3077C6;
 }
 
 .promotion__main {
@@ -742,7 +779,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .promotion__close-img {
+    display: block;
+    width: 26px;
+    height: 26px;
     margin: 25px 25px 0 0;
+    fill: #BFBFBF;
 }
 
 /*Reviews*/
@@ -824,6 +865,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 32px;
 }
 
+.review__account {
+    display: block;
+    width: 64px;
+    height: 64px;
+    fill: #BFBFBF;
+}
+
 .reviews__rating {
     display: flex;
     justify-content: flex-end;
@@ -874,7 +922,19 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 10px;
 }
 
+.review__flag {
+    display: block;
+    width: 16px;
+    height: 12px;
+}
+
+.review__flag__name {
+    padding-left: 6px;
+}
+
 .review__country {
+    display: flex;
+    align-items: center;
     color: #BFBFBF;
 }
 
@@ -1133,8 +1193,19 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 12px;
     }
 
-    .header__image__logotype {
-        max-width: 120px;
+    .header__logo {
+        width: 122px;
+        height: 24px;
+    }
+
+    .header__switcher__time {;
+        width: 16px;
+        height: 16px;
+    }
+
+    .header__account {
+        width: 24px;
+        height: 24px;
     }
 
     /*Navigation*/
@@ -1151,19 +1222,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .nav__link {
-        margin: 0 16px;
+        margin-right: 16px;
     }
 
-    .nav__link:first-child {
-        margin: 0;
-    }
-
-    .nav__changer {
-        max-width: 16px;
-    }
-
-    .nav__account {
-        max-width: 24px;
+    .nav__link:nth-child(2) {
+        margin-right: 16px;
     }
 
     .nav__link:after {
@@ -1228,8 +1291,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .offer__images {
-        max-width: 70px;
-        width: 100%;
+        width: 70px;
+        height: 70px;
     }
 
     .offer__info {
@@ -1431,13 +1494,22 @@ h1, h2, h3, h4, h5, h6 {
 
     .review__avatar {
         padding: 0;
-        margin-right: 8px;
+        margin-right: 13px;
+    }
+
+    .review__account {
+        width: 44px;
+        height: 44px;
     }
 
     .review__name {
         font-size: 15px;
         padding-bottom: 0;
         margin-bottom: 4px;
+    }
+
+    .review__country {
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .review__text {
@@ -1512,6 +1584,13 @@ h1, h2, h3, h4, h5, h6 {
         margin: 20px 16px 20px 46px;
     }
 
+    .promotion__logo {
+        display: block;
+        width: 57px;
+        height: 57px;
+        fill: #FFFFFF;
+    }
+
     .promotion__footer {
         display: block;
         margin: 40px 16px;
@@ -1549,7 +1628,14 @@ h1, h2, h3, h4, h5, h6 {
     .footer__logo {
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer__logotype {
+        display: block;
+        width: 98px;
+        height: 19px;
+        fill: #FFFFFF;
     }
 
     .footer__col {
