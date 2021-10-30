@@ -561,8 +561,9 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     z-index: 1;
-    height: var(--homes-image-height);
-    width: var(--homes-image-width);
+    /*height: var(--homes-image-height);
+    width: var(--homes-image-width);*/
+    object-fit: contain;
 }
 
 .overviews__tittle {
@@ -648,6 +649,7 @@ h1, h2, h3, h4, h5, h6 {
 .destinations__img img {
     display: block;
     transition: opacity .1s linear;
+    object-fit: contain;
 }
 
 .destinations__button {
