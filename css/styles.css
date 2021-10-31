@@ -1579,6 +1579,19 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 24px;
         transform: translate3d(50%, -50%, 0);
     }
+
+    /*Footer*/
+    .footer {
+        padding: 60px 0;
+    }
+
+    .footer__col--link {
+        font-size: 18px;
+    }
+
+    .footer__col--first {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1736,6 +1749,63 @@ h1, h2, h3, h4, h5, h6 {
 
     .promotion__close-img {
         max-width: 18px;
+    }
+
+    /*Footer*/
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer__inner {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer__logotype {
+        display: block;
+        max-width: 98px;
+        max-height: 19px;
+        fill: #FFFFFF;
+    }
+
+    .footer__col {
+        display: flex;
+        flex-direction: initial;
+        width: auto;
+        margin-right: 16px;
+    }
+
+    .footer__col--link {
+        font-size: 18px;
+    }
+
+    .footer__col--item:first-child {
+        display: flex;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+
+    .footer__col--first,
+    .footer__col--second,
+    .footer__col--third {
+        padding: 0;
+    }
+
+    .footer__col--item {
+        display: none;
+    }
+
+    /*Copyright*/
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -2146,50 +2216,6 @@ h1, h2, h3, h4, h5, h6 {
     /*Footer*/
     .footer {
         padding: 40px 0;
-    }
-
-    .footer__inner {
-        justify-content: center;
-    }
-
-    .footer__logo {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .footer__logotype {
-        display: block;
-        max-width: 98px;
-        max-height: 19px;
-        fill: #FFFFFF;
-    }
-
-    .footer__col {
-        display: flex;
-        flex-direction: initial;
-        width: auto;
-        margin-right: 16px;
-    }
-
-    .footer__col--link {
-        font-size: 15px;
-    }
-
-    .footer__col--item:first-child {
-        display: flex;
-        font-size: 18px;
-        text-decoration: underline;
-    }
-
-    .footer__col--first,
-    .footer__col--second,
-    .footer__col--third {
-        padding: 0;
-    }
-
-    .footer__col--item {
-        display: none;
     }
 
     /*Copyright*/
