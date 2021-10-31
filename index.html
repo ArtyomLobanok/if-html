@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/e3d108a91d.js" crossorigin="anonymous"></script>
     <title>TripHouse-site</title>
 </head>
 <body>
@@ -101,6 +100,12 @@
         </g>
     </symbol>
 
+    <symbol id="search" viewBox="0 0 16 16">
+        <g>
+            <path d="M11.4351 10.0629H10.7124L10.4563 9.81589C11.3528 8.77301 11.8925 7.4191 11.8925 5.94625C11.8925 2.66209 9.23042 0 5.94625 0C2.66209 0 0 2.66209 0 5.94625C0 9.23042 2.66209 11.8925 5.94625 11.8925C7.4191 11.8925 8.77301 11.3528 9.81589 10.4563L10.0629 10.7124V11.4351L14.6369 16L16 14.6369L11.4351 10.0629ZM5.94625 10.0629C3.66838 10.0629 1.82962 8.22413 1.82962 5.94625C1.82962 3.66838 3.66838 1.82962 5.94625 1.82962C8.22413 1.82962 10.0629 3.66838 10.0629 5.94625C10.0629 8.22413 8.22413 10.0629 5.94625 10.0629Z"/>
+        </g>
+    </symbol>
+
 </svg>
 
 <div class="page">
@@ -151,7 +156,11 @@
                 <div class="intro__form">
                     <form class="intro__form--request">
                         <div class="intro__first--input">
-                            <div class="intro__form--icon"><i class="fas fa-search"></i></div>
+                            <div class="intro__form--icon">
+                                <svg class="intro__search">
+                                    <use href="#search"></use>
+                                </svg>
+                            </div>
 
                             <div class="intro__form--item">
                                 <input type="text" name="name" id="name" class="intro__form--input" required>
@@ -448,6 +457,7 @@
                     <div class="promotion__main">
                         <div class="promotion__text">
                             <span class="promotion__ad">Sign up and get 20% off your first booking</span>
+                            <span class="promotion__ad__mobile">Sign up in the app and get 20% off your first booking</span>
                         </div>
                         <div class="promotion__btn">
                             <a class="promotion__enter" href="#"> Sign up</a>
