@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 900px;
     width: 100%;
     position: relative;
-    background: url("../assets/images/header/header_background.png") center no-repeat;
+    background: url("assets/images/header/header_background.png") center no-repeat;
     background-size: cover;
 }
 
@@ -466,8 +466,6 @@ h1, h2, h3, h4, h5, h6 {
 .overviews__item {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    /*max-width: 25%;*/
     margin-right: 16px;
 }
 
@@ -1298,7 +1296,6 @@ h1, h2, h3, h4, h5, h6 {
     .overviews__item {
         display: block;
         margin-right: 16px;
-        /*min-width: 33.333333%;*/
     }
 
 }
