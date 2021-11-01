@@ -650,7 +650,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .destinations__btn__next.active
 .destinations__btn__next {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 .destinations__arrow {
     display: block;
