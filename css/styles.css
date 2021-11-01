@@ -37,18 +37,14 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
     text-decoration-line: none;
+    border: none;
+    cursor: pointer;
 }
 
 /*Root for block images*/
 :root {
-    --homes-image-height: 296px;
-    --homes-image-width: 296px;
-    --homes-image-width-adaptive-md: 255px;
-    --homes-image-height-adaptive-md: 255px;
-    --homes-image-width-adaptive-sm: 185px;
-    --homes-image-height-adaptive-sm: 185px;
-    --homes-image-width-adaptive-xs: 155px;
-    --homes-image-height-adaptive-xs: 155px;
+    --homes-image-height: 100%;
+    --homes-image-width: 100%;
     --columns-count: 12;
 }
 
@@ -510,7 +506,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .overviews__prev {
     position: absolute;
-    top: calc(var(--homes-image-height) / 2);
+    top: calc(var(--homes-image-height) / 3);
     height: 40px;
     width: 40px;
     z-index: 1;
@@ -521,7 +517,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .overviews__next {
     position: absolute;
-    top: calc(var(--homes-image-height) / 2);
+    top: calc(var(--homes-image-height) / 3);
     height: 40px;
     width: 40px;
     z-index: 1;
@@ -547,12 +543,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .destinations {
     position: relative;
+    flex-direction: column;
 }
 
 .destinations__block {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.destinations__wrapper__first {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.destinations__wrapper__second {
+    display: none;
 }
 
 .destinations__card {
@@ -587,6 +593,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .destinations__img img {
     display: block;
+    width: 100%;
+    height: auto;
     transition: opacity .1s linear;
     object-fit: contain;
 }
@@ -630,11 +638,20 @@ h1, h2, h3, h4, h5, h6 {
 .destinations__btn__next {
     position: absolute;
     left: 50%;
-    bottom: -20%;
+    bottom: 0;
     z-index: 1;
     transform: translate3d(-50%, 50%, 0);
 }
 
+.destinations__btn__next.active
+.destinations__wrapper__second {
+    display: flex;
+}
+
+.destinations__btn__next.active
+.destinations__btn__next {
+    transform: rotate(180deg);
+}
 .destinations__arrow {
     display: block;
     width: 9px;
@@ -1325,11 +1342,6 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
     }
 
-    .overviews__btn__next {
-        top: calc(var(--homes-image-height-adaptive-md) / 2);
-        right: 0;
-    }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -1528,15 +1540,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /*Overviews*/
-    .overviews__prev {
-        height: 28px;
-        width: 28px;
-    }
-
-    .overviews__next {
-        height: 28px;
-        width: 28px;
-    }
 
     .overviews__img {
         margin-bottom: 12px;
@@ -1780,6 +1783,17 @@ h1, h2, h3, h4, h5, h6 {
 
     .offer__name {
         font-size: 18px;
+    }
+
+    /*Overviews*/
+    .overviews__prev {
+        height: 28px;
+        width: 28px;
+    }
+
+    .overviews__next {
+        height: 28px;
+        width: 28px;
     }
 
     /*Promotion*/
@@ -2026,11 +2040,6 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 10px;
     }
 
-    .overviews__photo {
-        max-height: var(--homes-image-height-adaptive-xs);
-        max-width: var(--homes-image-width-adaptive-xs);
-    }
-
     .overviews__tittle {
         margin-bottom: 5px;
         font-size: 12px;
@@ -2038,16 +2047,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .overviews__location {
         font-size: 12px;
-    }
-
-    .overviews__btn__next {
-        top: calc(var(--homes-image-height-adaptive-xs) / 2);
-        right: 0;
-    }
-
-    .overviews__arrow {
-        width: 8px;
-        height: 18px;
     }
 
     /*Destinations*/
@@ -2068,10 +2067,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .destinations__content {
         margin-bottom: 8px;
-    }
-
-    .destinations__photo {
-        max-width: calc(var(--homes-image-width-adaptive-xs));
     }
 
     .destinations__button {
