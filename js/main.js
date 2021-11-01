@@ -4,8 +4,10 @@ $(function() {
     infinite: true,
 	slidesToShow: 4,
 	slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+      autoplay: true,
+    autoPlayTimer: 2000,
+      prevArrow: "<img src='../assets/images/pref.svg' class='overviews__prev' alt='1'>",
+      nextArrow: "<img src='../assets/images/next.svg' class='overviews__next' alt='2'>",
 	responsive: [
 	    {
 	      breakpoint: 1024,
