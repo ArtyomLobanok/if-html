@@ -643,15 +643,16 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate3d(-50%, 50%, 0);
 }
 
-.destinations__btn__next.active
-.destinations__wrapper__second {
+.destinations__wrapper__second.active {
     display: flex;
+    transition: opacity 1s;
 }
 
-.destinations__btn__next.active
-.destinations__btn__next {
-    transform: rotate(180deg);
+.destinations__btn__next.active {
+    bottom: -7%;
+    border: none;
 }
+
 .destinations__arrow {
     display: block;
     width: 9px;
@@ -659,7 +660,11 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(90deg);
 }
 
-/*switcher*/
+.destinations__arrow.active {
+    transform: rotate(270deg);
+}
+
+/*Switcher*/
 .switcher__category {
     display: block;
     padding: 16px 65px;
@@ -2137,10 +2142,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .reviews__header {
         margin-bottom: 12px;
-    }
-
-    .reviews__photo {
-        max-width: 327px;
     }
 
     .reviews__price {
