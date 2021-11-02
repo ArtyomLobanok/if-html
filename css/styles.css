@@ -844,7 +844,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 12px;
+    padding: 0;
 }
 
 .reviews__block .slick-dots li {
@@ -857,8 +857,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .reviews__block .slick-dots button {
     margin: 5px;
+    padding: 0;
     width: 10px;
-    height: 13px;
+    height: 10px;
     border: 1px solid #333333;
     border-radius: 50%;
     background: transparent;
@@ -980,14 +981,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #BFBFBF;
 }
 
-
-/*.reviews__btn__next {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    z-index: 1;
-    transform: translate3d(50%, -50%, 0);
-}*/
 
 /*Review*/
 .review__info {
@@ -1425,6 +1418,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
     }
 
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1578,7 +1572,8 @@ h1, h2, h3, h4, h5, h6 {
 
     /*Section*/
     .section--promotion {
-        padding: 50px 0 0 0;
+        padding: 0;
+        margin-bottom: -55px;
     }
 
     .section__title {
@@ -1637,9 +1632,76 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 18px;
     }
 
+    /*Destinations*/
+    .destinations__switcher {
+        justify-content: space-evenly;
+        max-width: 100%;
+        margin-bottom: 24px;
+        background-color: #FFFFFF;
+    }
+
+    /*switcher*/
+    .switcher__category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 35px;
+        font-size: 22px;
+    }
+
+    .switcher__category:first-child {
+        padding: 15px 25px;
+    }
+
+    .switcher__category:last-child {
+        padding: 15px 30px;
+        margin-right: 0;
+    }
+
     /*Reviews*/
     #reviews {
         background-color: #EAF0F9;
+    }
+
+    .reviews__block .slick-dot {
+        margin: 0 auto;
+    }
+
+    .reviews__tittle {
+        padding: 26px 0 0 0;
+        margin-bottom: 15px;
+    }
+
+    .reviews__location {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .reviews__rating {
+        margin: 25px 0 0 0;
+    }
+
+    .reviews__views {
+        margin-right: 0;
+    }
+
+    /*Review*/
+    .review__avatar {
+        margin: 5px 21px 14px 3px;
+        padding: 0;
+    }
+
+    .review__name {
+        padding: 10px 0;
+    }
+
+    .review__flag__name {
+        padding-left: 6px;
+    }
+
+    .review__text {
+        padding: 0;
+        margin-bottom: 0;
     }
 
     /*Promotion*/
@@ -1883,6 +1945,24 @@ h1, h2, h3, h4, h5, h6 {
         height: 28px;
         width: 28px;
     }
+    /*Destinations*/
+    .destinations__switcher {
+        justify-content: space-between;
+    }
+
+    /*switcher*/
+    .switcher__category {
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+
+    .switcher__category:first-child {
+        padding: 10px 15px;
+    }
+
+    .switcher__category:last-child {
+        padding: 10px 20px;
+    }
 
     /*Promotion*/
     .promotion__ad__mobile {
@@ -2058,6 +2138,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .section--promotion {
         padding: 0;
+        margin-bottom: 0;
     }
 
     .section__header {
@@ -2139,10 +2220,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /*Destinations*/
     .destinations__switcher {
-        justify-content: space-between;
-        max-width: 100%;
         margin-bottom: 24px;
-        background-color: #FFFFFF;
     }
 
     .destinations__block {
@@ -2185,9 +2263,6 @@ h1, h2, h3, h4, h5, h6 {
 
     /*switcher*/
     .switcher__category {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 5px 25px;
         font-size: 19px;
     }
@@ -2289,7 +2364,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .review__text {
         padding: 0;
-        margin-bottom: 32px;
         font-size: 15px;
     }
 
@@ -2299,20 +2373,13 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
     }
 
-    .review__slider-dot {
-        width: 0.5rem;
-        height: 0.5rem;
-        margin-right: 8px;
-        border: 1px solid #333333;
-        border-radius: 50%;
+    .reviews__block .slick-dots button {
+        width: 8px;
+        height: 8px;
     }
 
-    .review__slider-dot:last-child {
-        margin-right: 0;
-    }
-
-    .review__slider-dot.active {
-        background-color: #333333;
+    .slick-dots {
+        margin: 0 auto;
     }
 
     /*Promotion*/
@@ -2339,6 +2406,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .promotion__close-img {
         max-width: 12px;
+    }
+
+    .promotion__ad__mobile {
+        font-size: 12px;
     }
 
     /*Footer*/
