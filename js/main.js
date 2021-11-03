@@ -62,6 +62,8 @@ $(function () {
 /*Carousel Reviews responsive*/
 $('.destinations__block').slick({
     infinite: true,
+    draggable: false,
+    swipe: false,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -74,6 +76,8 @@ $('.destinations__block').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 arrows: true,
+                draggable: true,
+                swipe: true,
             }
         },
         {
@@ -82,6 +86,8 @@ $('.destinations__block').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: true,
+                draggable: true,
+                swipe: true,
             }
         },
         {
@@ -90,6 +96,8 @@ $('.destinations__block').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: true,
+                draggable: true,
+                swipe: true,
             }
         },
         {
@@ -98,6 +106,8 @@ $('.destinations__block').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: true,
+                draggable: true,
+                swipe: true,
             }
         }
     ]
