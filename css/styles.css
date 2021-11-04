@@ -132,13 +132,11 @@ h1, h2, h3, h4, h5, h6 {
 .nav__link:after {
     content: "";
     display: block;
-    width: 100%;
+    width: 85%;
     background-color: #F5BD41;
     border: 2px solid #F5BD41;
     opacity: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    margin-top: 10px;
     z-index: 1;
     transition: opacity .1s linear;
 }
@@ -393,15 +391,16 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-.section__title-line {
-    position: absolute;
-    width: 8%;
-    bottom: -30px;
-    right: 0;
-    left: 0;
-    size: 100px;
+.section__line:after {
+    content: "";
+    display: block;
+    width: 100px;
     background-color: #F5BD41;
     border: 2px solid #F5BD41;
+    opacity: 1;
+    margin: 18px auto 0;
+    z-index: 1;
+    transition: opacity .1s linear;
 }
 
 /*Offer*/
