@@ -158,4 +158,7 @@ $('.reviews__block').slick({
             }
         }
     ]
+})
+    .on('setPosition', function (event, slick) {
+        slick.$slides.css('height', slick.$slideTrack.height() + 'px');
 });

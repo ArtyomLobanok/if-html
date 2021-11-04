@@ -675,7 +675,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .destinations__btn__next.active {
-    bottom: -7%;
+    bottom: -2%;
     border: none;
 }
 
@@ -888,6 +888,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     color: #383838;
     min-width: 0;
+    align-items: stretch;
+    height: 100%;
 }
 
 .reviews__item:last-child {
