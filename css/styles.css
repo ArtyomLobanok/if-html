@@ -133,10 +133,11 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     display: block;
     width: 85%;
+    bottom: -10px;
+    position: absolute;
     background-color: #F5BD41;
     border: 2px solid #F5BD41;
     opacity: 0;
-    margin-top: 10px;
     z-index: 1;
     transition: opacity .1s linear;
 }
@@ -454,10 +455,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .overviews__slider,
 .destinations__slider {
+    display: block;
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    min-width: 0;
 }
 
 .overviews__slider .slick-arrow {
@@ -717,10 +716,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .tabs-content__item {
     display: none;
+    position:absolute;
+    left:-9999px;
 }
 
 .tabs-content__item--active {
     display: block;
+    position:relative;
+    left:0;
 }
 
 /*Redirection*/
