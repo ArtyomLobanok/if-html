@@ -55,11 +55,8 @@ $(function () {
     );
 
 //Если нажали на Tabs
-    $('.tabs-triggers__item').on('click', function (e) {
-        //Уничтожаем объект
+    $('.tabs-triggers__item').on('click', function () {
         $('.destinations__slider').slick('unslick');
-
-        //Инициализируем новый слайдер
         $('.destinations__slider').slick({
             infinite: true,
             draggable: false,
