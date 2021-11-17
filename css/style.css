@@ -49,6 +49,10 @@ body {
   line-height: 1.2;
 }
 
+.page {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 79rem;
@@ -400,6 +404,8 @@ body {
   font-weight: 400;
 }
 .intro__form .form__button {
+  position: relative;
+  left: 0.0625rem;
   padding: 1.0625rem 3.5625rem;
   background-color: #3077C6;
   border: 0.0625rem solid #3077C6;
@@ -1394,6 +1400,7 @@ body {
     border-radius: 0.5rem;
   }
   .intro__form .form__btn .form__button {
+    position: unset;
     width: 100%;
     padding: 0.75rem 7.75rem;
     font-size: 1.1875rem;
