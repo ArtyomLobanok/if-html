@@ -100,8 +100,8 @@ body {
 
 .header__logo {
   display: block;
-  max-width: 12.8125rem;
-  max-height: 2.5rem;
+  width: 12.8125rem;
+  height: 2.5rem;
   fill: #3077C6;
 }
 
@@ -848,8 +848,8 @@ body {
 }
 .promotion__logotype svg {
   display: block;
-  max-width: 7.5rem;
-  max-height: 7.5rem;
+  width: 7.5rem;
+  height: 7.5rem;
   fill: #FFFFFF;
   padding: 1.5rem 0.25rem;
 }
@@ -1198,8 +1198,8 @@ body {
 .footer__logo {
   margin: 0 auto;
   display: none;
-  max-width: 6.125rem;
-  max-height: 1.1875rem;
+  width: 6.125rem;
+  height: 1.1875rem;
   fill: #FFFFFF;
 }
 
